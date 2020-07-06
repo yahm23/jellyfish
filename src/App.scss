@@ -2,10 +2,23 @@
     font-family: 'GilroyHeavy';
     src:  url('./fonts/Gilroy-Heavy.ttf') format('truetype')
 }
+@font-face {
+    font-family: 'GilroyRegular';
+    src:  url('./fonts/Gilroy-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'GilroyLight';
+    src:  url('./fonts/Gilroy-Light.ttf') format('truetype')
+}
 
 $fontHeavy: 'GilroyHeavy', Arial, sans-serif;
+$fontLight: 'GilroyLight', Arial, sans-serif;
+$fontRegular: 'GilroyRegular', Arial, sans-serif;
+
 $hotPink: #E7286C;
 $mattDark: #1B1B1B;
+$off-White:#cccccc;
+
 
 .App{
     background-color:$mattDark;
@@ -16,6 +29,11 @@ $mattDark: #1B1B1B;
 .bannerTitle{
     color: white;
     font-family: $fontHeavy;
+    text-align: center;
+    font-size: 105px;
+    font-weight: 100;
+    width: 60%;
+    margin: auto;
 }
 
 .logo{
@@ -30,6 +48,15 @@ $mattDark: #1B1B1B;
     display: flex;
     justify-content: space-between;
     width: 60%;
+
     margin: auto;
     margin-right: 40px;
+}
+
+.navbar-brand{
+    color: $off-White;
+    
+    font-family: $fontRegular;
+    text-decoration: none;
+    font-weight: 900;
 }

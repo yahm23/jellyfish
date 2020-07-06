@@ -2,6 +2,14 @@
   font-family: "GilroyHeavy";
   src: url("./fonts/Gilroy-Heavy.ttf") format("truetype");
 }
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GilroyLight";
+  src: url("./fonts/Gilroy-Light.ttf") format("truetype");
+}
 .App {
   background-color: #1B1B1B;
   height: 100%;
@@ -10,6 +18,11 @@
 .bannerTitle {
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
+  text-align: center;
+  font-size: 105px;
+  font-weight: 100;
+  width: 60%;
+  margin: auto;
 }
 
 .logo {
@@ -27,6 +40,13 @@
   width: 60%;
   margin: auto;
   margin-right: 40px;
+}
+
+.navbar-brand {
+  color: #cccccc;
+  font-family: "GilroyRegular", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=App.css.map */
