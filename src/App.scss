@@ -23,12 +23,18 @@ $off-White:#cccccc;
 .App{
     background-color:$mattDark;
     height: 100%;
-
 }
+.bannerBlurb{
+    font-family: $fontRegular;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
 .bannerContainer{
-    width: 60%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 8vh;
 }
 .bannerTitle{
     color: white;
@@ -39,12 +45,16 @@ $off-White:#cccccc;
     margin: auto;
 }
 
-
+.landingPageContent{
+    margin: 0 auto;
+    width: 60%;
+}
 .logo{
     margin: 25px;
     height:calc(20px + 5vmin)
 }
 .entireNavbar{
+    // border-bottom: $off-White 1px solid;
     display: flex;
     justify-content: space-between;
 }
@@ -53,7 +63,7 @@ $off-White:#cccccc;
     display: flex;
     justify-content: space-between;
     width: 60%;
-
+    
     margin: auto;
     margin-right: 40px;
 }
@@ -66,11 +76,11 @@ $off-White:#cccccc;
     font-weight: 900;
 }
 
-.control {
+.clipping {
     background: linear-gradient(184deg, #e7286c, #ffffff);
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
+    -webkit-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
 
     background-clip: text;
     color: transparent;

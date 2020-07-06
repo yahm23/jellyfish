@@ -15,10 +15,17 @@
   height: 100%;
 }
 
+.bannerBlurb {
+  font-family: "GilroyRegular", Arial, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
 .bannerContainer {
-  width: 60%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 8vh;
 }
 
 .bannerTitle {
@@ -28,6 +35,11 @@
   font-weight: 100;
   display: inline;
   margin: auto;
+}
+
+.landingPageContent {
+  margin: 0 auto;
+  width: 60%;
 }
 
 .logo {
@@ -55,11 +67,11 @@
   font-weight: 900;
 }
 
-.control {
+.clipping {
   background: linear-gradient(184deg, #e7286c, #ffffff);
   background-size: 400% 400%;
-  -webkit-animation: AnimationName 9s ease infinite;
-  animation: AnimationName 9s ease infinite;
+  -webkit-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
