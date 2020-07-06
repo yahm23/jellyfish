@@ -1,13 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import  {BrowserRouter } from 'react-router-dom';
+import MainContainer from './components/structural/mainContainer';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-        "TEstin"
+        <BrowserRouter>
+          <MainContainer></MainContainer>
+        </BrowserRouter>
       </header>
     </div>
   );
