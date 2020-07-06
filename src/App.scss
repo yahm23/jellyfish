@@ -53,6 +53,14 @@ $off-White:#cccccc;
     margin: 25px;
     height:calc(20px + 5vmin)
 }
+.navbarButton{
+    font-family: $fontRegular;
+    background-color: $hotPink;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+}
 .entireNavbar{
     // border-bottom: $off-White 1px solid;
     display: flex;
@@ -60,17 +68,19 @@ $off-White:#cccccc;
 }
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
+
     width: 60%;
-    
+    text-align: right;
     margin: auto;
     margin-right: 40px;
 }
-
+#button.navbar-brand {
+    margin-top:none;
+    margin-right: 0 !important;
+}
 .navbar-brand{
     color: $off-White;
-    
+    margin-right: 10%;
     font-family: $fontRegular;
     text-decoration: none;
     font-weight: 900;

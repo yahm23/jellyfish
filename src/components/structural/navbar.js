@@ -6,13 +6,7 @@ import {Link} from "react-router-dom";
 import Logo from '../media/jelly.svg'
 
 const NavbarTop = () => {
-    const BuyJellyButton = () => {
-        return (
-            <div>
-
-            </div>
-        )
-    }
+  
     return (
         <div>
             <div className="entireNavbar">
@@ -23,7 +17,10 @@ const NavbarTop = () => {
                         <NavbarBrand href="/buying">Technology</NavbarBrand>
                         <NavbarBrand href="/renting">Support</NavbarBrand>
                         {/* <NavbarBrand href="/selling">Selling</NavbarBrand> */}
-                        <NavbarBrand href="/contact">Buy Jellyfish</NavbarBrand>
+                        <NavbarBrand id= "button" href="/contact">
+                        <button  className="navbarButton">Buy Jellyfish</button>
+
+                        </NavbarBrand>
                         
                     </Navbar>
                     
