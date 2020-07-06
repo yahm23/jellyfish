@@ -54,6 +54,8 @@
   font-weight: bold;
   font-size: 19px;
   border: none;
+  border-radius: 12px;
+  padding: 10px;
 }
 
 .entireNavbar {

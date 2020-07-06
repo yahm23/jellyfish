@@ -60,6 +60,8 @@ $off-White:#cccccc;
     font-weight: bold;
     font-size: 19px;
     border: none;
+    border-radius: 12px;
+    padding: 10px;;
 }
 .entireNavbar{
     // border-bottom: $off-White 1px solid;
@@ -68,7 +70,6 @@ $off-White:#cccccc;
 }
 
 .navbar{
-
     width: 60%;
     text-align: right;
     margin: auto;
