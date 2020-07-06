@@ -109,3 +109,21 @@ $off-White:#cccccc;
     50%{background-position:46% 100%}
     100%{background-position:55% 0%}
 }
+@mixin absolutePosCentering{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.phonePreviewContainer{
+    // position: relative; 
+}
+
+.iphoneScreen{
+    width: 50%;
+    // @include absolutePosCentering();
+    // position: absolute;
+    // z-index: 1;
+}

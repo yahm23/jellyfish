@@ -1,4 +1,7 @@
 import React from 'react'
+import Iphone from '../media/iphoneTemplate.png'
+import IphoneScreen from '../media/phoneTemp.png'
+
 
 const Landing = () => {
     return (
@@ -9,9 +12,9 @@ const Landing = () => {
                         <h1 className="clipping bannerTitle" >control </h1>
                     <h1 className="bannerTitle" >of your energy use</h1>
                 </div>
-                <div>
-                    <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
-                </div>
+                <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                    {/* <img className="iphone" src={Iphone}></img> */}
+                    <img className="iphoneScreen"  src={IphoneScreen}></img>
             </div>
         </div>
     )

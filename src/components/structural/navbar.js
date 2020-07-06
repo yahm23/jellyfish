@@ -14,10 +14,10 @@ const NavbarTop = () => {
                 
                     <Navbar className = "navbar" expand="lg" variant="light" bg="light">
                         <NavbarBrand href="/">Products</NavbarBrand>
-                        <NavbarBrand href="/buying">Technology</NavbarBrand>
-                        <NavbarBrand href="/renting">Support</NavbarBrand>
+                        <NavbarBrand href="/technology">Technology</NavbarBrand>
+                        <NavbarBrand href="/support">Support</NavbarBrand>
                         {/* <NavbarBrand href="/selling">Selling</NavbarBrand> */}
-                        <NavbarBrand id= "button" href="/contact">
+                        <NavbarBrand id= "button" href="/buy-jellyfish">
                         <button  className="navbarButton">Buy Jellyfish</button>
 
                         </NavbarBrand>
