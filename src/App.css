@@ -15,6 +15,10 @@
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bannerBlurb {
   font-family: "GilroyRegular", Arial, sans-serif;
   color: white;
@@ -26,6 +30,7 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 8vh;
+  height: 100vh;
 }
 
 .bannerTitle {
@@ -116,8 +121,36 @@
     background-position: 55% 0%;
   }
 }
+.phonePreviewContainer {
+  margin-top: 8vh;
+}
+
 .iphoneScreen {
   width: 50%;
+}
+
+.arrow {
+  margin-top: 15vh;
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
