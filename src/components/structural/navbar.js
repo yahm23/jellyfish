@@ -9,7 +9,7 @@ const NavbarTop = () => {
     return (
         <div>
             <div className="entireNavbar">
-                    <Link to="/"><img className="logo" height="120px" src={Logo}></img></Link>
+                    <Link to="/"><img className="logo" src={Logo}></img></Link>
                 
                     <Navbar className = "navbar" expand="lg" variant="light" bg="light">
                         <NavbarBrand href="/">Home</NavbarBrand>
