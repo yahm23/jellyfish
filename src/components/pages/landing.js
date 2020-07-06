@@ -22,9 +22,10 @@ const Landing = () => {
                 <div id="preview" className="phonePreviewContainer">
                     <img className="iphoneScreen"  src={IphoneScreen}></img>
                     {/* <div data-aos-anchor=".phonePreviewContainer"  data-aos-anchor-placement="top-top" data-aos="anim1"> */}
-                    <div data-aos="zoom-in">
-                        <h1 >this working</h1>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <h1 className="animArrow">←</h1>
                     </div>
+                    <h1 className="feature">Feature: bla bla monitor real time accuractely</h1>
                 </div>
             </div>
         </div>

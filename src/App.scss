@@ -41,6 +41,7 @@ html {
     margin: 0 auto;
     margin-top: 8vh;
     height: 100vh;
+    width: 60%;
 }
 .bannerTitle{
     color: white;
@@ -53,7 +54,7 @@ html {
 
 .landingPageContent{
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
 }
 .logo{
     margin: 25px;
@@ -124,20 +125,35 @@ html {
     text-align: center;
 }
 .phonePreviewContainer{ 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     margin-top: 8vh;
-    // position: relative; 
+    
 }
+
 [data-aos=anim1].aos-animate {
-    // overflow: hidden;
     transform: rotateY(0) translateY(20px) rotate(45deg);
     opacity: 1;
 }
 
+.animArrow{
+    font-size: 300%;
+    color: white;
+}
+.feature{
+    color: white;
+    font-family: $fontHeavy;
+    grid-area: 1 / 3 / 2 / 4; 
+
+}
+
 .iphoneScreen{
     // margin-top: 2vh;
-    width: 50%;
-
+    width: 100%;
+    grid-area: 1 / 1 / 4 / 2; 
 }
 
 .arrow {
