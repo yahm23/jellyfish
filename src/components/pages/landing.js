@@ -21,30 +21,36 @@ const Landing = () => {
         </div>
     )
     }
+
+    const BannerContainer = () => {
+        return(
+            <div className= "bannerContainer">
+                <h1 className="bannerTitle" >Take </h1>
+                <h1 className="clipping bannerTitle" >control </h1>
+                <h1 className="bannerTitle" >of your energy use</h1>
+                <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                {ArrowBounce('#section1')}
+            </div>
+        )
+    }
     return (
         <div>
             <div className = "landingPageContent">
-                <div className= "bannerContainer">
-                        <h1 className="bannerTitle" >Take </h1>
-                        <h1 className="clipping bannerTitle" >control </h1>
-                    <h1 className="bannerTitle" >of your energy use</h1>
-                    <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
-                    {ArrowBounce('#section1')}
-                </div>
+                <BannerContainer></BannerContainer>
                 <div id="section1" >
                     <div  className="phonePreviewContainer">
                         <img className="iphoneScreen"  src={IphoneScreen}></img>
                         <AnimatedArrow></AnimatedArrow>
                         <h1 className="feature">Feature: bla bla monitor real time accuractely</h1>
                         <AnimatedArrow></AnimatedArrow>
-                        <h1 className="feature">Keep track of your highest energy used devices</h1>
+                        <h1 className="feature">Keep track of your highest energy consuming devices</h1>
                         <AnimatedArrow></AnimatedArrow>
                         <h1 className="feature">Reduce your energy usage by tracking total</h1>
                     </div>
                     {ArrowBounce('#section2')}
                 </div>
                 <div id="section2">
-                    <h2 className="subheading">Features</h2>
+                    <h2 className="subheading">What to expect</h2>
                 </div>
             </div>
         </div>
