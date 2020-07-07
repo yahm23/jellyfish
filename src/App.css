@@ -222,6 +222,7 @@ html {
 }
 
 .squareIcons {
+  margin-top: 15vh;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
@@ -234,9 +235,9 @@ html {
 }
 
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -moz-animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
+  animation: bounce 4s infinite;
 }
 
 @keyframes bounce {

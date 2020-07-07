@@ -56,7 +56,7 @@ const Landing = () => {
     }
     const Icon = (url,text) => {
         return(
-            <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+            <div className="iconDescription" data-aos="zoom-in" data-aos-duration="2000" >
                 <div className="square"><img className="icons" src={url}></img></div>
         <h2 className="iconText">{text}</h2>
             </div>
