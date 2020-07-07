@@ -37,7 +37,7 @@ html {
 .bannerTitle {
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
-  font-size: 105px;
+  font-size: 12vh;
   font-weight: 100;
   display: inline;
   margin: auto;
@@ -70,7 +70,7 @@ html {
 }
 
 .navbar {
-  width: 60%;
+  width: 75%;
   text-align: right;
   margin: auto;
   margin-right: 40px;
@@ -123,6 +123,8 @@ html {
   }
 }
 .phonePreviewContainer {
+  width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 0.2fr 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -142,9 +144,10 @@ html {
 }
 
 .feature {
+  font-size: 200%;
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
-  grid-area: 1/3/2/4;
+  font-weight: 100;
 }
 
 .iphoneScreen {
@@ -153,7 +156,6 @@ html {
 }
 
 .arrow {
-  margin-top: 25vh;
   text-align: center;
 }
 
