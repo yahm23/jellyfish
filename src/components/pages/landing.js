@@ -3,7 +3,7 @@ import IphoneScreen from '../media/phoneTemp.png'
 import Chevron from '../media/chevvy.svg'
 import leccy from '../media/icons/leccy.png'
 import time from '../media/icons/time.png'
-import tree from '../media/icons2/treep.png'
+import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
 import AOS from 'aos'
 
@@ -58,12 +58,24 @@ const Landing = () => {
     const Expect = () => {
         return(
             <div id="section2">
-                <h2 className="subheading">With jellyfish, you can expect more </h2>
+                <h2 className="subheading">With Jellyfish, you can expect more. </h2>
                 <div className='squareIcons'>
-                    <div className="square"><img className="icons" src={leccy}></img></div>
-                    <div className="square"><img className="icons" src={money}></img></div>
-                    <div className="square"><img className="icons" src={tree}></img></div>
-                    <div className="square"><img className="icons" src={time}></img></div>
+                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+                        <div className="square"><img className="icons" src={leccy}></img></div>
+                        <h2 className="iconText">Monitor your electric use at any time</h2>
+                    </div>
+                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+                        <div className="square"><img className="icons" src={money}></img></div>
+                        <h2 className="iconText">Save money by reducing your electric bill</h2>
+                    </div>
+                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+                        <div className="square"><img className="icons" src={tree}></img></div>
+                        <h2 className="iconText">Reduce your carbon footprint</h2>
+                    </div>
+                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+                        <div className="square"><img className="icons" src={time}></img></div>
+                        <h2 className="iconText">Real-time readings of your electrical use</h2>
+                    </div>
                 </div>
 
                 {ArrowBounce('#section2')}

@@ -198,6 +198,19 @@ html {
   min-height: 100vh;
 }
 
+.iconDescription {
+  font-family: "GilroyRegular", Arial, sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: 130px 450px;
+  grid-template-rows: 1fr;
+  margin-bottom: 10vh;
+}
+
+.iconText {
+  align-self: center;
+}
+
 .square {
   border-radius: 21px;
   background: linear-gradient(145deg, #1d1d1d, #181818);
@@ -209,6 +222,7 @@ html {
 }
 
 .squareIcons {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 }

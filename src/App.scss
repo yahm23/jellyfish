@@ -197,6 +197,19 @@ html {
 #section2{
     @include pageSection()
 }
+.iconDescription{
+    font-family: $fontRegular;
+    color: white;
+    display: grid;
+    grid-template-columns: 130px 450px;
+    grid-template-rows: 1fr;
+    margin-bottom:10vh;
+}
+
+.iconText{
+    align-self: center;
+}
+
 .square{
     @include neomorphic();
     position: relative;
@@ -205,6 +218,7 @@ html {
     height: 100px;
 }
 .squareIcons{
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
 }
