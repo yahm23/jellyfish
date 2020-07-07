@@ -23,21 +23,21 @@ html {
   font-family: "GilroyRegular", Arial, sans-serif;
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 .bannerContainer {
   text-align: center;
   margin: 0 auto;
   margin-top: 8vh;
-  height: 100vh;
+  min-height: 80vh;
   width: 60%;
 }
 
 .bannerTitle {
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
-  font-size: 12vh;
+  font-size: 6vw;
   font-weight: 100;
   display: inline;
   margin: auto;
@@ -123,13 +123,14 @@ html {
   }
 }
 .phonePreviewContainer {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-columns: 0.6fr 0.2fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin-bottom: 8vh;
   margin-top: 8vh;
 }
 
@@ -139,8 +140,9 @@ html {
 }
 
 .animArrow {
-  font-size: 300%;
+  font-size: 225%;
   color: white;
+  align-self: center;
 }
 
 .feature {
@@ -148,15 +150,30 @@ html {
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
   font-weight: 100;
+  align-self: center;
 }
 
 .iphoneScreen {
-  width: 100%;
+  justify-self: right;
+  height: 100%;
+  padding-top: 25px;
   grid-area: 1/1/4/2;
 }
 
 .arrow {
   text-align: center;
+}
+
+#section2 {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.subheading {
+  font-family: "GilroyLight", Arial, sans-serif;
+  color: white;
+  font-size: 4vw;
 }
 
 .bounce {
