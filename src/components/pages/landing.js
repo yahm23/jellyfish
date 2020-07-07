@@ -6,6 +6,13 @@ import AOS from 'aos'
 
 const Landing = () => {
     AOS.init();
+    const ArrowBounce = (id) => {
+        return (
+            <div className="arrow bounce">
+                <a  href={id}><img width="80px" src={Chevron}></img></a>
+            </div>
+        )
+    }
     return (
         <div>
             <div className = "landingPageContent">
@@ -14,10 +21,7 @@ const Landing = () => {
                         <h1 className="clipping bannerTitle" >control </h1>
                     <h1 className="bannerTitle" >of your energy use</h1>
                     <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
-                    <div className="arrow bounce">
-                        <a  href="#preview"><img width="80px" src={Chevron}></img></a>
-                    </div>
-                
+                    {ArrowBounce('#preview')}
                 </div>
                 <div id="preview" className="phonePreviewContainer">
                     <img className="iphoneScreen"  src={IphoneScreen}></img>
