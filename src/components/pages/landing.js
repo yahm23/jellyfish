@@ -54,30 +54,24 @@ const Landing = () => {
             </div>
         )
     }
-    
+    const Icon = (url,text) => {
+        return(
+            <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
+                <div className="square"><img className="icons" src={url}></img></div>
+        <h2 className="iconText">{text}</h2>
+            </div>
+        )
+    }
     const Expect = () => {
         return(
             <div id="section2">
                 <h2 className="subheading">With Jellyfish, you can expect more. </h2>
                 <div className='squareIcons'>
-                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
-                        <div className="square"><img className="icons" src={leccy}></img></div>
-                        <h2 className="iconText">Monitor your electric use at any time</h2>
-                    </div>
-                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
-                        <div className="square"><img className="icons" src={money}></img></div>
-                        <h2 className="iconText">Save money by reducing your electric bill</h2>
-                    </div>
-                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
-                        <div className="square"><img className="icons" src={tree}></img></div>
-                        <h2 className="iconText">Reduce your carbon footprint</h2>
-                    </div>
-                    <div className="iconDescription" data-aos="zoom-in" data-aos-duration="4000" >
-                        <div className="square"><img className="icons" src={time}></img></div>
-                        <h2 className="iconText">Real-time readings of your electrical use</h2>
-                    </div>
+                    {Icon(leccy,"Monitor your electric use at any time")}
+                    {Icon(money,"Save money by reducing your electric bill")}
+                    {Icon(tree,"Reduce your carbon footprint")}
+                    {Icon(time,"Real-time readings of your electrical use")}
                 </div>
-
                 {ArrowBounce('#section2')}
             </div>
         )
