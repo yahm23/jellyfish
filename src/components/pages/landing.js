@@ -1,6 +1,10 @@
 import React from 'react'
 import IphoneScreen from '../media/phoneTemp.png'
 import Chevron from '../media/chevvy.svg'
+import leccy from '../media/icons/leccy.png'
+import time from '../media/icons/time.png'
+import tree from '../media/icons2/treep.png'
+import money from '../media/icons/money.png'
 import AOS from 'aos'
 
 
@@ -33,25 +37,45 @@ const Landing = () => {
             </div>
         )
     }
+
+    const PhonePreviewContainer = () => {
+        return (
+            <div id="section1" >
+                <div  className="phonePreviewContainer">
+                    <img className="iphoneScreen"  src={IphoneScreen}></img>
+                    <AnimatedArrow></AnimatedArrow>
+                    <h1 className="feature">Feature: bla bla monitor real time accuractely</h1>
+                    <AnimatedArrow></AnimatedArrow>
+                    <h1 className="feature">Keep track of your highest energy consuming devices</h1>
+                    <AnimatedArrow></AnimatedArrow>
+                    <h1 className="feature">Reduce your energy usage by tracking total</h1>
+                </div>
+                {ArrowBounce('#section2')}
+            </div>
+        )
+    }
+    
+    const Expect = () => {
+        return(
+            <div id="section2">
+                <h2 className="subheading">With jellyfish, you can expect more </h2>
+                <div className='squareIcons'>
+                    <div className="square"><img className="icons" src={leccy}></img></div>
+                    <div className="square"><img className="icons" src={money}></img></div>
+                    <div className="square"><img className="icons" src={tree}></img></div>
+                    <div className="square"><img className="icons" src={time}></img></div>
+                </div>
+
+                {ArrowBounce('#section2')}
+            </div>
+        )
+    }
     return (
         <div>
             <div className = "landingPageContent">
                 <BannerContainer></BannerContainer>
-                <div id="section1" >
-                    <div  className="phonePreviewContainer">
-                        <img className="iphoneScreen"  src={IphoneScreen}></img>
-                        <AnimatedArrow></AnimatedArrow>
-                        <h1 className="feature">Feature: bla bla monitor real time accuractely</h1>
-                        <AnimatedArrow></AnimatedArrow>
-                        <h1 className="feature">Keep track of your highest energy consuming devices</h1>
-                        <AnimatedArrow></AnimatedArrow>
-                        <h1 className="feature">Reduce your energy usage by tracking total</h1>
-                    </div>
-                    {ArrowBounce('#section2')}
-                </div>
-                <div id="section2">
-                    <h2 className="subheading">What to expect</h2>
-                </div>
+                <PhonePreviewContainer></PhonePreviewContainer>
+                <Expect></Expect>
             </div>
         </div>
     )

@@ -165,20 +165,49 @@ html {
 
 .arrow {
     @include absolutePosCentering();
-    bottom: 20px;
+    bottom: 5vh;
     text-align: center;
 }
-#section1{
+@mixin pageSection{
+    position: relative;
+    padding-top: 5vh;
     width: 90%;
     margin: 0 auto;
     min-height: 100vh;
 }
-#section2{
-    width: 90%;
-    margin: 0 auto;
-    min-height: 100vh;
+@mixin neomorphic {
+    border-radius: 21px;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow:  11px 11px 22px #161616, 
+                -11px -11px 22px #202020;
+}
+.icons {
+    position: absolute;
+    margin: auto;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
+#section1{
+    @include pageSection()
+}
+#section2{
+    @include pageSection()
+}
+.square{
+    @include neomorphic();
+    position: relative;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+.squareIcons{
+    display: flex;
+    justify-content: space-around;
+}
 .subheading{
     font-family: $fontRegular;
     color: white;
@@ -190,16 +219,16 @@ html {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
-  
+
 
 @keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-}
-40% {
-    transform: translateY(-30px);
-}
-60% {
-    transform: translateY(-15px);
-}
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
