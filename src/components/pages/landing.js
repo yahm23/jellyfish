@@ -1,12 +1,13 @@
 import React from 'react'
-import IphoneScreen from '../media/phoneTemp.png'
+import IphoneScreen from '../media/jellyfishAppTemp.png'
 import Chevron from '../media/chevvy.svg'
 import leccy from '../media/icons/leccy.png'
 import time from '../media/icons/time.png'
 import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
-import AOS from 'aos'
 
+import AOS from 'aos'
+import Animation from '../structural/animation.js'
 
 const Landing = () => {
     AOS.init();
@@ -41,6 +42,7 @@ const Landing = () => {
     const PhonePreviewContainer = () => {
         return (
             <div id="section1" >
+                <h2 className="subheading">A dedicated Jellyfish app. </h2>
                 <div  className="phonePreviewContainer">
                     <img className="iphoneScreen"  src={IphoneScreen}></img>
                     <AnimatedArrow></AnimatedArrow>
@@ -56,7 +58,7 @@ const Landing = () => {
     }
     const Icon = (url,text) => {
         return(
-            <div className="iconDescription" data-aos="zoom-in" data-aos-duration="2000" >
+            <div className="iconDescription" data-aos="zoom-in" data-aos-duration="500" >
                 <div className="square"><img className="icons" src={url}></img></div>
         <h2 className="iconText">{text}</h2>
             </div>
@@ -72,7 +74,16 @@ const Landing = () => {
                     {Icon(tree,"Reduce your carbon footprint")}
                     {Icon(time,"Real-time readings of your electrical use")}
                 </div>
-                {ArrowBounce('#section2')}
+                {ArrowBounce('#section3')}
+            </div>
+        )
+    }
+
+    const Technology = () => {
+        return (
+            <div id="section3">
+                <h2 className="subheading">Technology</h2>
+                {/* <Animation></Animation> */}
             </div>
         )
     }
@@ -82,6 +93,7 @@ const Landing = () => {
                 <BannerContainer></BannerContainer>
                 <PhonePreviewContainer></PhonePreviewContainer>
                 <Expect></Expect>
+                <Technology></Technology>
             </div>
         </div>
     )

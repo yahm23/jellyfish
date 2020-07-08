@@ -10,10 +10,11 @@
     font-family: 'GilroyLight';
     src:  url('./fonts/Gilroy-Light.ttf') format('truetype')
 }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 $fontHeavy: 'GilroyHeavy', Arial, sans-serif;
 $fontLight: 'GilroyLight', Arial, sans-serif;
-$fontRegular: 'GilroyRegular', Arial, sans-serif;
+$fontRegular: 'Quicksand', sans-serif;
 
 $hotPink: #E7286C;
 $mattDark: #1B1B1B;
@@ -145,6 +146,7 @@ html {
 
 .animArrow{
     font-size: 225%;
+    text-align: center;
     color: white;
     align-self: center;
 }
@@ -197,6 +199,9 @@ html {
 #section2{
     @include pageSection()
 }
+#section3{
+    @include pageSection()
+}
 .iconDescription{
     font-family: $fontRegular;
     color: white;
@@ -218,7 +223,7 @@ html {
     height: 100px;
 }
 .squareIcons{
-    margin-top: 15vh;
+    margin-top: 10vh;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
@@ -227,6 +232,7 @@ html {
     font-family: $fontRegular;
     color: white;
     font-size: 4vw;
+    margin: 0;
 }
 
 .bounce {
@@ -235,6 +241,12 @@ html {
     animation: bounce 4s infinite;
 }
 
+#Untitled {
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+    overflow: visible;
+}
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
