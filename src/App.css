@@ -20,6 +20,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.scrollPos {
+  position: fixed;
+  color: white;
+  top: 100px;
+  right: 10px;
+}
+
 .bannerBlurb {
   font-family: "Quicksand", sans-serif;
   color: white;

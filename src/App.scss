@@ -29,7 +29,12 @@ $off-White:#cccccc;
 html {
     scroll-behavior: smooth;
 }
-
+.scrollPos{
+    position: fixed;
+    color: white;
+    top: 100px;
+    right: 10px;
+}
 .bannerBlurb{
     font-family: $fontRegular;
     color: white;

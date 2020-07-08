@@ -83,7 +83,7 @@ const Landing = () => {
         return (
             <div id="section3">
                 <h2 className="subheading">Technology</h2>
-                {/* <Animation></Animation> */}
+                <Animation></Animation>
             </div>
         )
     }
