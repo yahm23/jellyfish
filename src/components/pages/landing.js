@@ -8,9 +8,12 @@ import money from '../media/icons/money.png'
 
 import AOS from 'aos'
 import Animation from '../structural/animation.js'
+import ScrollPosition from '../structural/scrollPosition.js'
+
 
 const Landing = () => {
     AOS.init();
+
     const ArrowBounce = (id) => {
         return (
             <div className="arrow bounce">
@@ -65,9 +68,12 @@ const Landing = () => {
         )
     }
     const Expect = () => {
+        
         return(
             <div id="section2">
-                <h2 className="subheading">With Jellyfish, you can expect more. </h2>
+                <h2 className="subheading">With Jellyfish, you can expect </h2>
+                <h2 className="subheading"> more. {ScrollPosition} </h2>
+                {ScrollPosition() > 61? <h2 className="subheading"> better </h2>:<></>}
                 <div className='squareIcons'>
                     {Icon(leccy,"Monitor your electric use at any time")}
                     {Icon(money,"Save money by reducing your electric bill")}
