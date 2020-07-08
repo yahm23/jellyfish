@@ -238,22 +238,31 @@ html {
     color: white;
     font-size: 4vw;
     margin: 0;
+}
+.inline{
+    margin: 0 auto;
     display: inline;
 }
+.techDescription{
+    color: white;
+    font-family: $fontRegular;
+}
+.device{
+    margin-top: 15vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 90%;
 
+}
 .bounce {
     -moz-animation: bounce 4s infinite;
     -webkit-animation: bounce 4s infinite;
     animation: bounce 4s infinite;
 }
-
-#Untitled {
-    width: 70vw;
-    height: 70vh;
-    position: relative;
-    overflow: visible;
+.animatedBetter{
+    color:$hotPink ;
 }
-
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);

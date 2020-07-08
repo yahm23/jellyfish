@@ -5,6 +5,7 @@ import leccy from '../media/icons/leccy.png'
 import time from '../media/icons/time.png'
 import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
+import JellyDevice from '../media/jellyDevice.png'
 
 import AOS from 'aos'
 import Animation from '../structural/animation.js'
@@ -71,9 +72,14 @@ const Landing = () => {
         
         return(
             <div id="section2">
-                <h2 className="subheading">With Jellyfish, you can expect </h2>
-                <h2 className="subheading"> more. {ScrollPosition} </h2>
-                {ScrollPosition() > 61? <h2 className="subheading"> better </h2>:<></>}
+                <h2 className="subheading inline">With Jellyfish, you can expect </h2>
+                {ScrollPosition() > 61?
+                 <>
+                    <s className="subheading inline">more.</s> 
+                    <h2 data-aos-duration="3000" data-aos="zoom-in"  className="subheading inline animatedBetter">  better </h2></>
+                 :
+                 <h2 className="subheading inline"> more. </h2>}
+
                 <div className='squareIcons'>
                     {Icon(leccy,"Monitor your electric use at any time")}
                     {Icon(money,"Save money by reducing your electric bill")}
@@ -89,7 +95,10 @@ const Landing = () => {
         return (
             <div id="section3">
                 <h2 className="subheading">Technology</h2>
-                <Animation></Animation>
+                <div className="device">
+                    <h2 className = "techDescription"> hello hello this is our tech, ooh very nice</h2>
+                    <img  width="450px"src={JellyDevice}/>
+                </div>
             </div>
         )
     }
