@@ -94,7 +94,7 @@ const Landing = () => {
     const Technology = () => {
         return (
             <div id="section3">
-                <h2 className="subheading">Technology</h2>
+                <h2 className="subheading">Our technology is unique.</h2>
                 <div className="device">
                     <h2 className = "techDescription"> hello hello this is our tech, ooh very nice</h2>
                     <img  width="450px"src={JellyDevice}/>
