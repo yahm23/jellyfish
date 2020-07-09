@@ -298,6 +298,30 @@ html {
   color: #E7286C;
 }
 
+.footer {
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  width: 70%;
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerSubs {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  color: #E7286C;
+}
+
+.footerLinks {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);

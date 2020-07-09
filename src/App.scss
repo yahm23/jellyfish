@@ -282,6 +282,25 @@ html {
 .animatedBetter{
     color:$hotPink ;
 }
+.footer{
+    border-top: 1px solid $off-White;
+    text-align: center;
+    width: 70%;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSubs{
+    // text-align: center;
+    @include techDescription();
+    color:$hotPink ;
+}
+.footerLinks{
+    @include techDescription();
+}
+ul{
+    padding-left: 0;
+}
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
