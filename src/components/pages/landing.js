@@ -104,9 +104,11 @@ const Landing = () => {
             <div id="section3">
                 <h2 className="subheading">Our technology is unique.</h2>
                 <div className="device">
-                    <h2 className = "techDescription"> The device is installed simply by clamping directly into your electric panel. </h2>
                     <img className="jellyInUse" width="450px"src={jellyInUse}/>
-                    <h2 className = "techDescription"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                    <h2 className = "box1"> The device is installed simply by clamping directly into your electric panel. </h2>
+                    <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                    <h2 className = "box1"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                    <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                 </div>
             </div>
         )

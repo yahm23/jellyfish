@@ -261,6 +261,17 @@ html {
   display: inline;
 }
 
+.box1 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-align: right;
+}
+
+.box2 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
 .device {
   display: flex;
   margin: 0 auto;

@@ -251,10 +251,11 @@ html {
     font-family: $fontRegular;
 }
 .box1{
-
+    @include techDescription();
+    text-align: right;
 }
 .box2 {
-    
+    @include techDescription();
 }
 .device{
     display: flex;
