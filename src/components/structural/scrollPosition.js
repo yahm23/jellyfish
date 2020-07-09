@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 const ScrollPosition = () => {
     const[position,setPosition] = useState(0);
+    const[section2y,setY] = useState();
 
     const listenToScroll = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop
@@ -10,7 +11,10 @@ const ScrollPosition = () => {
 
         const scrolled = (winScroll / height)*100
         setPosition(scrolled);
-        console.log(scrolled);
+        const yPos =document.getElementById("section2").getBoundingClientRect().y;
+        setY(yPos)
+        // console.log('Y of el is ' + yPos);
+        // console.log(scrolled);
     }
 
     useEffect(() => {
@@ -20,7 +24,7 @@ const ScrollPosition = () => {
         }
     }, [position])
 
-    return position
+    return [position,section2y]
 
 }
 

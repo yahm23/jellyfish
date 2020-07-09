@@ -11,6 +11,7 @@ import jellyInUse from '../media/jellyInUse.png'
 import AOS from 'aos'
 import Animation from '../structural/animation.js'
 import ScrollPosition from '../structural/scrollPosition.js'
+import { getElementError } from '@testing-library/react'
 
 
 const Landing = () => {
@@ -81,7 +82,7 @@ const Landing = () => {
         return(
             <div id="section2">
                 <h2 className="subheading inline">With Jellyfish, you can expect </h2>
-                {ScrollPosition() > 51?
+                {ScrollPosition()[0] > ScrollPosition()[1]?
                  <>
                     <s className="subheading inline">more.</s> 
                     <h2 data-aos-duration="3000" data-aos="zoom-in"  className="subheading inline animatedBetter">  better </h2></>
