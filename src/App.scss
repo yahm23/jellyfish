@@ -212,13 +212,27 @@ html {
 }
 
 #section1{
-    @include pageSection()
+    @include pageSection();
 }
 #section2{
-    @include pageSection()
+    @include pageSection();
 }
 #section3{
-    @include pageSection()
+    @include pageSection();
+}
+#section4{
+    @include pageSection();
+    min-height:auto !important;
+    margin-bottom: 15vh;
+}
+#biggerBuy{
+    margin-top: 10%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.getStarted{
+    width: 60%;
+    // font-size: 78px;
 }
 .iconDescription{
     font-family: $fontRegular;
@@ -251,6 +265,13 @@ html {
     color: white;
     font-size: 4vw;
     margin: 0;
+}
+
+.subheadingStarted{
+    font-family: $fontRegular;
+    color: white;
+    font-size: 6vw;
+    margin-bottom: 10%;
 }
 .inline{
     margin: 0 auto;

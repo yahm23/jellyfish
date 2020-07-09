@@ -228,6 +228,26 @@ html {
   min-height: 100vh;
 }
 
+#section4 {
+  position: relative;
+  padding-top: 5vh;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: auto !important;
+  margin-bottom: 15vh;
+}
+
+#biggerBuy {
+  margin-top: 10%;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.getStarted {
+  width: 60%;
+}
+
 .iconDescription {
   font-family: "Quicksand", sans-serif;
   color: white;
@@ -263,6 +283,13 @@ html {
   color: white;
   font-size: 4vw;
   margin: 0;
+}
+
+.subheadingStarted {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 6vw;
+  margin-bottom: 10%;
 }
 
 .inline {

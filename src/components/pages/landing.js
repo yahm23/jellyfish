@@ -99,7 +99,7 @@ const Landing = () => {
             </div>
         )
     }
-
+    
     const Technology = () => {
         return (
             <div id="section3">
@@ -111,6 +111,21 @@ const Landing = () => {
                     <h2 className = "box1"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                 </div>
+                {ArrowBounce('#section4')}
+            </div>
+        )
+    }
+
+    const  GetStarted = () => {
+        return (
+            <div id="section4">
+                <div className = "getStarted" >
+                    <h1 className="subheadingStarted"> Get Started with Jellyfish.</h1>
+                    <h1 className="box2"> Sign up to get started today. </h1>
+                    <button id="biggerBuy" className="navbarButton">Buy Jellyfish</button>
+
+                </div>
+                {/* <h1> Get Started with Jellyfish</h1> */}
             </div>
         )
     }
@@ -121,6 +136,7 @@ const Landing = () => {
                 <PhonePreviewContainer></PhonePreviewContainer>
                 <Expect></Expect>
                 <Technology></Technology>
+                <GetStarted></GetStarted>
             </div>
         </div>
     )
