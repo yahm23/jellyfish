@@ -165,6 +165,9 @@ html {
 }
 
 .feature {
+  border-radius: 21px;
+  background: linear-gradient(145deg, #1d1d1d, #181818);
+  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   font-size: 200%;
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
@@ -291,6 +294,9 @@ html {
 .jellyInUse {
   grid-area: 1/2/5/3;
   justify-self: center;
+  border-radius: 21px;
+  background: linear-gradient(145deg, #1d1d1d, #181818);
+  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
 }
 
 .bounce {

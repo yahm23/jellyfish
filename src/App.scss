@@ -21,6 +21,13 @@ $mattDark: #1B1B1B;
 $off-White:#cccccc;
 
 
+@mixin neomorphic {
+    border-radius: 21px;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow:  11px 11px 22px #161616, 
+                -11px -11px 22px #202020;
+}
+
 .App{
     background-color:$mattDark;
     height: 100%;
@@ -164,6 +171,7 @@ html {
     align-self: center;
 }
 .feature{
+    @include neomorphic();
     font-size: 200%;
     color: white;
     font-family: $fontHeavy;
@@ -190,12 +198,7 @@ html {
     margin: 0 auto;
     min-height: 100vh;
 }
-@mixin neomorphic {
-    border-radius: 21px;
-    background: linear-gradient(145deg, #1d1d1d, #181818);
-    box-shadow:  11px 11px 22px #161616, 
-                -11px -11px 22px #202020;
-}
+
 .icons {
     position: absolute;
     margin: auto;
@@ -276,6 +279,7 @@ html {
 .jellyInUse{
     grid-area: 1 / 2 / 5 / 3;
     justify-self: center;
+    @include neomorphic()
     
 }
 .bounce {
