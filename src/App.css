@@ -61,6 +61,31 @@ html {
   margin-top: 4vh;
 }
 
+@media all and (max-width: 723px) {
+  .bannerText {
+    margin: 7vh;
+    text-align: center;
+  }
+
+  .bannerTitle {
+    color: white;
+    font-family: "GilroyHeavy", Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 100;
+    display: inline;
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+  }
+
+  .bannerBlurb {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.4vw;
+    font-size: 120%;
+  }
+}
 .landingPageContent {
   margin: 0 auto;
   width: 100%;
@@ -69,6 +94,11 @@ html {
 .logo {
   margin: 25px;
   height: calc(20px + 5vmin);
+}
+
+.deviceMobile {
+  width: 50%;
+  margin: 0 25%;
 }
 
 .navbarButton {

@@ -7,6 +7,7 @@ import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
 import JellyDevice from '../media/jellyDevice.png'
 import jellyInUse from '../media/jellyInUse.png'
+import { useMediaQuery } from 'react-responsive'
 
 import AOS from 'aos'
 import Animation from '../structural/animation.js'
@@ -16,6 +17,7 @@ import { getElementError } from '@testing-library/react'
 
 const Landing = () => {
     AOS.init();
+    let isMobile = useMediaQuery({ maxWidth: 767 });
 
     const ArrowBounce = (id) => {
         return (
@@ -69,6 +71,7 @@ const Landing = () => {
             </div>
         )
     }
+
     const Icon = (url,text) => {
         return(
             <div className="iconDescription" data-aos="zoom-in" data-aos-duration="500" >
@@ -77,6 +80,7 @@ const Landing = () => {
             </div>
         )
     }
+
     const Expect = () => {
         
         return(
@@ -129,8 +133,9 @@ const Landing = () => {
             </div>
         )
     }
-    return (
-        <div>
+
+    const NormalLanding = () => {
+        return (
             <div className = "landingPageContent">
                 <BannerContainer></BannerContainer>
                 <PhonePreviewContainer></PhonePreviewContainer>
@@ -138,6 +143,30 @@ const Landing = () => {
                 <Technology></Technology>
                 <GetStarted></GetStarted>
             </div>
+        )
+    }
+    const MobileLanding = () => {   
+        return(
+            <div>
+                <img className="deviceMobile" src={JellyDevice}/> 
+                <div className="bannerText">
+                    <h1 className="bannerTitle" >Take </h1>
+                    <h1 className="clipping bannerTitle" >control </h1>
+                    <h1 className="bannerTitle" >of your energy use</h1>
+                    <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                    <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+
+                </div>
+
+            </div>
+        )
+
+    }
+    return (
+        <div>
+            {isMobile? 
+            <MobileLanding></MobileLanding> :
+            <NormalLanding></NormalLanding>}
         </div>
     )
 }

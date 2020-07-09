@@ -42,12 +42,18 @@ html {
     top: 100px;
     right: 10px;
 }
-.bannerBlurb{
+
+@mixin bannerBlurb{
     font-family: $fontRegular;
     color: white;
     text-align: center;
-    font-size: 2.4vw;
+    font-size: 2.4vw; 
 }
+
+.bannerBlurb{
+    @include bannerBlurb();
+}
+
 .bannerItems{
     display: flex;
     padding-top: 2%;
@@ -62,7 +68,7 @@ html {
     min-height: 80vh;
     width: 90%;
 }
-.bannerTitle{
+@mixin bannerTitle{
     color: white;
     font-family: $fontHeavy;
     font-size: 5vw;
@@ -70,8 +76,31 @@ html {
     display: inline;
     margin: auto;
 }
+.bannerTitle{
+    @include bannerTitle();
+}
+
 .bannerText{
     margin-top: 4vh;
+}
+@media all and (max-width: 723px) {
+    //Mobile
+
+    .bannerText{
+        margin: 7vh;
+        text-align: center;
+    }
+
+    .bannerTitle{
+        @include bannerTitle();
+        text-align:center;
+        font-size: 150%;
+    }
+    
+    .bannerBlurb{
+        @include bannerBlurb();
+        font-size: 120%;
+    }
 }
 
 .landingPageContent{
@@ -81,6 +110,10 @@ html {
 .logo{
     margin: 25px;
     height:calc(20px + 5vmin)
+}
+.deviceMobile{
+    width: 50%;
+    margin: 0 25%;
 }
 .navbarButton{
     font-family: $fontRegular;
