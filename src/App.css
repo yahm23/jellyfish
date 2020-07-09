@@ -36,6 +36,7 @@ html {
 
 .bannerItems {
   display: flex;
+  padding-top: 2%;
 }
 
 .bannerContainer {
@@ -54,6 +55,10 @@ html {
   font-weight: 100;
   display: inline;
   margin: auto;
+}
+
+.bannerText {
+  margin-top: 4vh;
 }
 
 .landingPageContent {
@@ -223,7 +228,7 @@ html {
   font-family: "Quicksand", sans-serif;
   color: white;
   display: grid;
-  grid-template-columns: 130px 450px;
+  grid-template-columns: 130px 520px;
   grid-template-rows: 1fr;
   margin-bottom: 10vh;
 }
@@ -304,7 +309,7 @@ html {
   width: 70%;
   padding: 5% 15%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footerSubs {
@@ -316,6 +321,10 @@ html {
 .footerLinks {
   color: white;
   font-family: "Quicksand", sans-serif;
+}
+
+.footerDiv {
+  margin: 0 4%;
 }
 
 ul {

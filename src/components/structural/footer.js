@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <div>
+            <div className="footerDiv">
                 <h4 className="footerSubs">Jellyfish</h4>
                 <ul>
                     <p className="footerLinks" >Products</p>
@@ -14,7 +14,7 @@ const Footer = () => {
                 </ul>
             </div>
         
-            <div>
+            <div className="footerDiv">
                 <h4 className="footerSubs">Platforms</h4>
                 <ul>
                     <p className="footerLinks" >iOS App</p>
@@ -24,7 +24,7 @@ const Footer = () => {
                 </ul>
             </div>
         
-            <div>
+            <div className="footerDiv">
                 <h4 className="footerSubs">About</h4>
                 <ul>
                     <p className="footerLinks" >Company</p>

@@ -43,6 +43,8 @@ html {
 }
 .bannerItems{
     display: flex;
+    padding-top: 2%;
+
 }
 
 .bannerContainer{
@@ -60,6 +62,9 @@ html {
     font-weight: 100;
     display: inline;
     margin: auto;
+}
+.bannerText{
+    margin-top: 4vh;
 }
 
 .landingPageContent{
@@ -214,7 +219,7 @@ html {
     font-family: $fontRegular;
     color: white;
     display: grid;
-    grid-template-columns: 130px 450px;
+    grid-template-columns: 130px 520px;
     grid-template-rows: 1fr;
     margin-bottom:10vh;
 }
@@ -271,8 +276,7 @@ html {
 .jellyInUse{
     grid-area: 1 / 2 / 5 / 3;
     justify-self: center;
-    // height: 100%;
-    // width: auto;
+    
 }
 .bounce {
     -moz-animation: bounce 4s infinite;
@@ -288,7 +292,7 @@ html {
     width: 70%;
     padding: 5% 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .footerSubs{
     // text-align: center;
@@ -297,6 +301,9 @@ html {
 }
 .footerLinks{
     @include techDescription();
+}
+.footerDiv{
+    margin: 0 4%;
 }
 ul{
     padding-left: 0;

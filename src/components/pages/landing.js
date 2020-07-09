@@ -81,7 +81,7 @@ const Landing = () => {
         return(
             <div id="section2">
                 <h2 className="subheading inline">With Jellyfish, you can expect </h2>
-                {ScrollPosition() > 61?
+                {ScrollPosition() > 51?
                  <>
                     <s className="subheading inline">more.</s> 
                     <h2 data-aos-duration="3000" data-aos="zoom-in"  className="subheading inline animatedBetter">  better </h2></>
