@@ -148,14 +148,16 @@ const Landing = () => {
     const MobileLanding = () => {   
         return(
             <div>
-                <img className="deviceMobile" src={JellyDevice}/> 
-                <div className="bannerText">
-                    <h1 className="bannerTitle" >Take </h1>
-                    <h1 className="clipping bannerTitle" >control </h1>
-                    <h1 className="bannerTitle" >of your energy use</h1>
-                    <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
-                    <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+                <div>
+                    <img className="deviceMobile" src={JellyDevice}/> 
+                    <div className="bannerText">
+                        <h1 className="bannerTitle" >Take </h1>
+                        <h1 className="clipping bannerTitle" >control </h1>
+                        <h1 className="bannerTitle" >of your energy use</h1>
+                        <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                        <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
 
+                    </div>
                 </div>
 
             </div>

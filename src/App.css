@@ -63,7 +63,7 @@ html {
 
 @media all and (max-width: 723px) {
   .bannerText {
-    margin: 7vh;
+    margin: 4vh;
     text-align: center;
   }
 
@@ -75,7 +75,7 @@ html {
     display: inline;
     margin: auto;
     text-align: center;
-    font-size: 150%;
+    font-size: 200%;
   }
 
   .bannerBlurb {
@@ -83,7 +83,7 @@ html {
     color: white;
     text-align: center;
     font-size: 2.4vw;
-    font-size: 120%;
+    font-size: 130%;
   }
 }
 .landingPageContent {

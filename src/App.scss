@@ -87,19 +87,19 @@ html {
     //Mobile
 
     .bannerText{
-        margin: 7vh;
+        margin: 4vh;
         text-align: center;
     }
 
     .bannerTitle{
         @include bannerTitle();
         text-align:center;
-        font-size: 150%;
+        font-size: 200%;
     }
     
     .bannerBlurb{
         @include bannerBlurb();
-        font-size: 120%;
+        font-size: 130%;
     }
 }
 
