@@ -6,6 +6,7 @@ import time from '../media/icons/time.png'
 import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
 import JellyDevice from '../media/jellyDevice.png'
+import jellyInUse from '../media/jellyInUse.png'
 
 import AOS from 'aos'
 import Animation from '../structural/animation.js'
@@ -34,10 +35,17 @@ const Landing = () => {
     const BannerContainer = () => {
         return(
             <div className= "bannerContainer">
-                <h1 className="bannerTitle" >Take </h1>
-                <h1 className="clipping bannerTitle" >control </h1>
-                <h1 className="bannerTitle" >of your energy use</h1>
-                <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                <div className="bannerItems">
+                    <div className = "bannerText">
+                        <h1 className="bannerTitle" >Take </h1>
+                        <h1 className="clipping bannerTitle" >control </h1>
+                        <h1 className="bannerTitle" >of your energy use</h1>
+                        <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                    </div>
+                    <div>
+                        <img  src={JellyDevice} width= "100%" height="auto"/> 
+                    </div>
+                </div>
                 {ArrowBounce('#section1')}
             </div>
         )
@@ -96,8 +104,9 @@ const Landing = () => {
             <div id="section3">
                 <h2 className="subheading">Our technology is unique.</h2>
                 <div className="device">
-                    <h2 className = "techDescription"> hello hello this is our tech, ooh very nice</h2>
-                    <img  width="450px"src={JellyDevice}/>
+                    <h2 className = "techDescription"> The device is installed simply by clamping directly into your electric panel. </h2>
+                    <img className="jellyInUse" width="450px"src={jellyInUse}/>
+                    <h2 className = "techDescription"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                 </div>
             </div>
         )

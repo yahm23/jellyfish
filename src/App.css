@@ -31,7 +31,11 @@ html {
   font-family: "Quicksand", sans-serif;
   color: white;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.4vw;
+}
+
+.bannerItems {
+  display: flex;
 }
 
 .bannerContainer {
@@ -40,13 +44,13 @@ html {
   margin: 0 auto;
   margin-top: 8vh;
   min-height: 80vh;
-  width: 60%;
+  width: 90%;
 }
 
 .bannerTitle {
   color: white;
   font-family: "GilroyHeavy", Arial, sans-serif;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 100;
   display: inline;
   margin: auto;
@@ -257,17 +261,20 @@ html {
   display: inline;
 }
 
-.techDescription {
-  color: white;
-  font-family: "Quicksand", sans-serif;
-}
-
 .device {
   display: flex;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: repeat(4, 1fr);
   justify-content: space-around;
   width: 90%;
   margin-top: 15vh;
+}
+
+.jellyInUse {
+  grid-area: 1/2/5/3;
+  justify-self: center;
 }
 
 .bounce {

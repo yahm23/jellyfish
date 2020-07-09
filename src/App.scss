@@ -39,7 +39,10 @@ html {
     font-family: $fontRegular;
     color: white;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.4vw;
+}
+.bannerItems{
+    display: flex;
 }
 
 .bannerContainer{
@@ -48,12 +51,12 @@ html {
     margin: 0 auto;
     margin-top: 8vh;
     min-height: 80vh;
-    width: 60%;
+    width: 90%;
 }
 .bannerTitle{
     color: white;
     font-family: $fontHeavy;
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 100;
     display: inline;
     margin: auto;
@@ -243,17 +246,32 @@ html {
     margin: 0 auto;
     display: inline;
 }
-.techDescription{
+@mixin techDescription{
     color: white;
     font-family: $fontRegular;
+}
+.box1{
+
+}
+.box2 {
+    
 }
 .device{
     display: flex;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(4, 1fr);
     justify-content: space-around;
     width: 90%;
     margin-top: 15vh;
+}
 
+.jellyInUse{
+    grid-area: 1 / 2 / 5 / 3;
+    justify-self: center;
+    // height: 100%;
+    // width: auto;
 }
 .bounce {
     -moz-animation: bounce 4s infinite;
