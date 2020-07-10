@@ -156,7 +156,28 @@ const Landing = () => {
                         <h1 className="bannerTitle" >of your energy use</h1>
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
                         <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+                    </div>
+                    <div>
+                        <img className="iphoneScreen"  src={IphoneScreen}></img>
+                        <h1 className="feature"> Feature: bla bla monitor real time accuractely</h1>
+                        <h1 className="feature"> Keep track of your highest energy consuming devices</h1>
+                        <h1 className="feature"> Reduce your energy usage by tracking total</h1>
+                    </div>
 
+                    <div id="section2"> 
+                    <h2 className="subheading inline">With Jellyfish, you can expect </h2>
+                        {ScrollPosition()[0] > ScrollPosition()[1]?
+                        <>
+                        <s className="subheading inline">more.</s> 
+                        <h2 data-aos-duration="3000" data-aos="zoom-in"  className="subheading inline animatedBetter">  better </h2></>
+                        :
+                        <h2 className="subheading inline"> more. </h2>}
+                        <div className='squareIcons'>
+                            {Icon(leccy,"Monitor your electric use at any time")}
+                            {Icon(money,"Save money by reducing your electric bill")}
+                            {Icon(tree,"Reduce your carbon footprint")}
+                            {Icon(time,"Real-time readings of your electrical use")}
+                        </div>
                     </div>
                 </div>
 

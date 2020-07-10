@@ -61,31 +61,6 @@ html {
   margin-top: 4vh;
 }
 
-@media all and (max-width: 723px) {
-  .bannerText {
-    margin: 4vh;
-    text-align: center;
-  }
-
-  .bannerTitle {
-    color: white;
-    font-family: "GilroyHeavy", Arial, sans-serif;
-    font-size: 5vw;
-    font-weight: 100;
-    display: inline;
-    margin: auto;
-    text-align: center;
-    font-size: 200%;
-  }
-
-  .bannerBlurb {
-    font-family: "Quicksand", sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 2.4vw;
-    font-size: 130%;
-  }
-}
 .landingPageContent {
   margin: 0 auto;
   width: 100%;
@@ -200,7 +175,7 @@ html {
   box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   font-size: 200%;
   color: white;
-  font-family: "GilroyHeavy", Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 100;
   align-self: center;
   padding: 3%;
@@ -403,6 +378,71 @@ ul {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@media all and (max-width: 723px) {
+  .bannerText {
+    margin: 4vh;
+    text-align: center;
+  }
+
+  .bannerTitle {
+    color: white;
+    font-family: "GilroyHeavy", Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 100;
+    display: inline;
+    margin: auto;
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .bannerBlurb {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.4vw;
+    font-size: 130%;
+  }
+
+  .iphoneScreen {
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .feature {
+    font-size: 130%;
+    text-align: center;
+    margin: 0 4vh;
+  }
+
+  #section2 {
+    margin: 0 4vh;
+    padding-top: 10vh;
+  }
+
+  .subheading {
+    font-size: 150%;
+  }
+
+  .iconDescription {
+    width: 100%;
+    margin-bottom: 5vh;
+    grid-template-columns: 20% 80%;
+  }
+
+  .iconText {
+    font-size: 100%;
+    padding-left: 8%;
+  }
+
+  .square {
+    width: auto;
+    height: 70px;
+  }
+
+  .squareIcons {
+    width: 90%;
   }
 }
 
