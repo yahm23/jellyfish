@@ -479,8 +479,29 @@ ul {
   animation: stroke_fill 3s ease forwards;
   stroke-dasharray: 7000;
   stroke-dashoffset: 7000;
-  stroke: white;
+  stroke: #E7286C;
   stroke-width: 10;
+}
+
+.wire {
+  width: 100px;
+}
+
+.wires {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  min-width: auto;
+  min-height: auto;
+}
+
+#box1 {
+  justify-self: right;
+}
+
+.deviceAnim {
+  justify-self: center;
 }
 
 /*# sourceMappingURL=App.css.map */
