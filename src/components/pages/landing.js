@@ -165,7 +165,7 @@ const Landing = () => {
                     </div>
 
                     <div id="section2"> 
-                    <h2 className="subheading inline">With Jellyfish, you can expect </h2>
+                        <h2 className="subheading inline">With Jellyfish, you can expect </h2>
                         {ScrollPosition()[0] > ScrollPosition()[1]?
                         <>
                         <s className="subheading inline">more.</s> 
@@ -179,6 +179,18 @@ const Landing = () => {
                             {Icon(time,"Real-time readings of your electrical use")}
                         </div>
                     </div>
+                    
+                    <div id="section2"> 
+                        <h2 className="subheading">Our technology is unique.</h2>
+                        <img className="jellyInUse2"src={jellyInUse}/>
+                        <h2 className = "feature mobileText"> The device is installed simply by clamping directly into your electric panel. </h2>
+                        <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                        <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                        <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
+                    </div>
+
+                    <div className = "svgwave">
+                       </div>
                 </div>
 
             </div>
