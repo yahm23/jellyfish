@@ -21,7 +21,7 @@ const NavbarTop = () => {
                     <Link to="/"><img className="logo" src={Logo}></img></Link>
                 
                     <Navbar className = "navbar" expand="lg" variant="light" bg="light">
-                        <NavbarBrand href="/">Products</NavbarBrand>
+                        <NavbarBrand href="/products">Products</NavbarBrand>
                         <NavbarBrand href="/technology">Technology</NavbarBrand>
                         <NavbarBrand href="/support">Support</NavbarBrand>
                         {/* <NavbarBrand href="/selling">Selling</NavbarBrand> */}
