@@ -42,7 +42,10 @@ html {
     top: 100px;
     right: 10px;
 }
+@mixin productPage{
+    font-family:$fontRegular;
 
+}
 @mixin bannerBlurb{
     font-family: $fontRegular;
     color: white;
@@ -365,8 +368,32 @@ ul{
     }
 }
 
+.productPage{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.productBanner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.handImg{
+    width:50%
+}
+.productBannerText{
+    @include bannerBlurb();
+    font-size: 4vw;
+    align-self: center;
+    width: 50%;
+}
+
 @media all and (max-width: 723px) {
     //Mobile
+
+    .productPage{
+        width: 90%;
+    }
 
     .bannerText{
         margin: 4vh;

@@ -380,7 +380,35 @@ ul {
     transform: translateY(-15px);
   }
 }
+.productPage {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.productBanner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.handImg {
+  width: 50%;
+}
+
+.productBannerText {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2.4vw;
+  font-size: 4vw;
+  align-self: center;
+  width: 50%;
+}
+
 @media all and (max-width: 723px) {
+  .productPage {
+    width: 90%;
+  }
+
   .bannerText {
     margin: 4vh;
     text-align: center;
