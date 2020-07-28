@@ -229,12 +229,15 @@ html {
 #section1{
     @include pageSection();
 }
+
 #section2{
     @include pageSection();
 }
+
 #section3{
     @include pageSection();
 }
+
 #section4{
     @include pageSection();
     min-height:auto !important;

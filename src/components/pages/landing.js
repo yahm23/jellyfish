@@ -204,8 +204,8 @@ const Landing = () => {
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     </div>
-
-                    {WireDeviceAnimation(9,8)}
+                    {/* Scroll vlaue to trigger animation should be passed in  */}
+                    {/* {WireDeviceAnimation(9,8)} */}
                 </div>
 
             </div>
