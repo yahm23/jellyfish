@@ -545,7 +545,7 @@ $iphoneSize : 1;
     @include centerAbsolute();
     border-radius: 6px;
     width:($iphoneSize * 280px);
-    background-color:rgba(255,255,255, 0.9);
+    background-color:$mattDark;
     
     margin-top: ($iphoneSize * 20px);
     position: absolute;
@@ -558,7 +558,13 @@ $iphoneSize : 1;
     border-radius: 28px;
     position: absolute;
     bottom: ($iphoneSize * 15px);
-    background-color:rgba(255,255,255, 0.9);
+    background-color:$mattDark;
     height:  ($iphoneSize * 40px);
     width:  ($iphoneSize * 40px);
+}
+
+#foo{
+    width: 100px;
+    height:100px;
+    margin: 100px auto;
 }
