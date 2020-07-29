@@ -539,4 +539,40 @@ ul {
   justify-self: center;
 }
 
+.iphoneMock {
+  border-radius: 21px;
+  background: linear-gradient(145deg, #1d1d1d, #181818);
+  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
+  background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+  width: 300px;
+  height: 600px;
+  position: relative;
+}
+
+.screen {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
+  position: absolute;
+  height: 510px;
+}
+
+.homeButton {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 28px;
+  position: absolute;
+  bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 40px;
+  width: 40px;
+}
+
 /*# sourceMappingURL=App.css.map */

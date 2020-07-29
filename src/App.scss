@@ -25,7 +25,7 @@ $off-White:#cccccc;
     border-radius: 21px;
     background: linear-gradient(145deg, #1d1d1d, #181818);
     box-shadow:  11px 11px 22px #161616, 
-                -11px -11px 22px #202020;
+    -11px -11px 22px #202020;
 }
 
 .App{
@@ -521,4 +521,44 @@ min-height: auto
 }
 .deviceAnim {
     justify-self: center;
+}
+
+
+
+$iphoneSize : 1;
+
+@mixin centerAbsolute{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.iphoneMock{
+    @include neomorphic();
+    background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+    width: ($iphoneSize * 300px);
+    height: ($iphoneSize * 600px);
+    position: relative;
+    
+}
+.screen{
+    @include centerAbsolute();
+    border-radius: 6px;
+    width:($iphoneSize * 280px);
+    background-color:rgba(255,255,255, 0.9);
+    
+    margin-top: ($iphoneSize * 20px);
+    position: absolute;
+    height: ($iphoneSize * 510px);
+    
+}
+
+.homeButton{
+    @include centerAbsolute();
+    border-radius: 28px;
+    position: absolute;
+    bottom: ($iphoneSize * 15px);
+    background-color:rgba(255,255,255, 0.9);
+    height:  ($iphoneSize * 40px);
+    width:  ($iphoneSize * 40px);
 }
