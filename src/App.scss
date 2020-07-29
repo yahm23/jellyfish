@@ -370,7 +370,9 @@ ul{
 
 .productPage{
     width: 70%;
+    max-width: 1200px;
     margin: 10vh auto;
+    min-height: 90vh;
 }
 
 .productBanner{
@@ -380,8 +382,13 @@ ul{
 }
 
 .handImg{
-    width:50%
+    width:30%
 }
+
+.smallerProductText{
+    font-size: 70%;
+}
+
 .productBannerText{
     @include bannerBlurb();
     font-size: 4vw;
