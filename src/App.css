@@ -575,10 +575,8 @@ ul {
   width: 40px;
 }
 
-#foo {
-  width: 100px;
-  height: 100px;
-  margin: 100px auto;
+#phoneDraw {
+  margin: 15px auto;
 }
 
 /*# sourceMappingURL=App.css.map */

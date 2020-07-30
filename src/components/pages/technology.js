@@ -3,7 +3,7 @@ import Vivus from 'vivus';
 import ReactVivus from 'react-vivus';
 import Test from '../media/homeTest.svg'
 import bed from '../media/bedframe.svg'
-import bed1 from '../media/bedagain.svg'
+import bed1 from '../media/devices.svg'
 
 export default function Technology() {
 
@@ -12,7 +12,7 @@ export default function Technology() {
             <h1 className="productBannerText">Technology</h1>
            <div className = "iphoneMock" >
                 <div className = "screen">
-                    <ReactVivus
+                    {/* <ReactVivus
                         id="foo"
                         option={{
                         file: bed,
@@ -21,16 +21,16 @@ export default function Technology() {
                         type: 'delayed',
                         }}
                         style={{ height: '200px', width: '200px' }}
-                    />
+                    /> */}
                     <ReactVivus
-                        id="foo"
+                        id="phoneDraw"
                         option={{
                         file: bed1,
-                        duration: 800,
+                        duration: 200,
                         animTimingFunction: 'EASE',
                         type: 'delayed',
                         }}
-                        style={{ height: '200px', width: '200px' }}
+                        style={{ width: '95%' }}
                     />
                 </div>
                 <div className ="homeButton"></div>

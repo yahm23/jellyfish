@@ -563,8 +563,7 @@ $iphoneSize : 1;
     width:  ($iphoneSize * 40px);
 }
 
-#foo{
-    width: 100px;
-    height:100px;
-    margin: 100px auto;
+#phoneDraw{
+    
+    margin: ($iphoneSize * 15px) auto;
 }
