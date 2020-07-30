@@ -537,6 +537,7 @@ $iphoneSize : 1;
 .iphoneMock{
     @include neomorphic();
     background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+    border-radius: 1vw;
     width: ($iphoneSize * 25vw);
     height: ($iphoneSize * 50vw);
     position: relative;
@@ -552,7 +553,8 @@ $iphoneSize : 1;
     width:($iphoneSize * 23vw);
     background-color:$mattDark;
     
-    margin-top: ($iphoneSize * 2vw);
+    // margin-top: ($iphoneSize * 2vw);
+    top: ($iphoneSize * 2vw);
     position: absolute;
     height: ($iphoneSize * 42vw);
     
@@ -570,5 +572,5 @@ $iphoneSize : 1;
 
 #phoneDraw{
     
-    margin: ($iphoneSize * 15px) auto;
+    margin: ($iphoneSize * 1vw) auto;
 }

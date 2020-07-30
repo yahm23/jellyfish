@@ -545,6 +545,7 @@ ul {
   background: linear-gradient(145deg, #1d1d1d, #181818);
   box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+  border-radius: 1vw;
   width: 25vw;
   height: 50vw;
   position: relative;
@@ -560,7 +561,7 @@ ul {
   border-radius: 1vw;
   width: 23vw;
   background-color: #1B1B1B;
-  margin-top: 2vw;
+  top: 2vw;
   position: absolute;
   height: 42vw;
 }
@@ -579,7 +580,7 @@ ul {
 }
 
 #phoneDraw {
-  margin: 15px auto;
+  margin: 1vw auto;
 }
 
 /*# sourceMappingURL=App.css.map */
