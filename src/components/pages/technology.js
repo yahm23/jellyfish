@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react'
 import Vivus from 'vivus';
 import ReactVivus from 'react-vivus';
-import Test from '../media/homeTest.svg'
-import bed from '../media/bedframe.svg'
-import bed1 from '../media/devices.svg'
+import devices from '../media/devices.svg'
 
 export default function Technology() {
 
@@ -25,7 +23,7 @@ export default function Technology() {
                     <ReactVivus
                         id="phoneDraw"
                         option={{
-                        file: bed1,
+                        file: devices,
                         duration: 200,
                         animTimingFunction: 'EASE',
                         type: 'delayed',
