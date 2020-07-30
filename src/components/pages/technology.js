@@ -16,7 +16,7 @@ export default function Technology() {
                         id="phoneDraw"
                         option={{
                         file: devices,
-                        duration: 200,
+                        duration: 180,
                         animTimingFunction: 'EASE',
                         type: 'delayed',
                         }}

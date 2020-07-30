@@ -31,6 +31,7 @@ $off-White:#cccccc;
 .App{
     background-color:$mattDark;
     height: 100%;
+    overflow: hidden;
 }
 
 html {
@@ -540,6 +541,10 @@ $iphoneSize : 1;
     height: ($iphoneSize * 600px);
     position: relative;
     
+
+    transform: rotate(35deg);
+    overflow-x: hidden;
+    right: -50%;
 }
 .screen{
     @include centerAbsolute();
