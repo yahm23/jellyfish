@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
-import Vivus from 'vivus';
+// import Vivus from 'vivus';
 import ReactVivus from 'react-vivus';
 import devices from '../media/devices.svg'
+import graph from '../media/bars.svg'
 
 export default function Technology() {
 
@@ -10,16 +11,7 @@ export default function Technology() {
             <h1 className="productBannerText">Technology</h1>
            <div className = "iphoneMock" >
                 <div className = "screen">
-                    {/* <ReactVivus
-                        id="foo"
-                        option={{
-                        file: bed,
-                        duration: 200,
-                        animTimingFunction: 'EASE',
-                        type: 'delayed',
-                        }}
-                        style={{ height: '200px', width: '200px' }}
-                    /> */}
+                    
                     <ReactVivus
                         id="phoneDraw"
                         option={{
@@ -29,6 +21,17 @@ export default function Technology() {
                         type: 'delayed',
                         }}
                         style={{ width: '95%' }}
+                    />
+                    
+                    <ReactVivus
+                        id="phoneDraw2"
+                        option={{
+                        file: graph,
+                        duration: 200,
+                        animTimingFunction: 'EASE',
+                        type: 'delayed',
+                        }}
+                        style={{ width: '90%', margin:'0 auto' }}
                     />
                 </div>
                 <div className ="homeButton"></div>
