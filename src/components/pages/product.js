@@ -8,7 +8,7 @@ export default function Product() {
     return (
         <div className="productPage">
             <div className="productBanner">
-                <div>
+                <div className ="leadingGridTextPhone">
                     <h1 className="productBannerText">Get a view into your home you can’t get anywhere else.</h1>
                     <h1 className="bannerBlurb"> See when the garage door opened, the television turned on, or when the dryer finished its cycle.</h1>
                 </div>
