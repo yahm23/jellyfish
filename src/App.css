@@ -550,7 +550,7 @@ ul {
   position: relative;
   transform: rotate(35deg);
   overflow-x: hidden;
-  right: -50%;
+  right: -68vw;
 }
 
 .screen {
