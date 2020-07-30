@@ -5,8 +5,7 @@ import graph from '../media/bars.svg'
 
 export default function Phone() {
     return (
-        <div className= "productPage">
-        <h1 className="productBannerText">Technology</h1>
+        
        <div className = "iphoneMock" >
             <div className = "screen">
                 
@@ -33,7 +32,7 @@ export default function Phone() {
                 />
             </div>
             <div className ="homeButton"></div>
-       </div>
+       
     </div>
     )
 }

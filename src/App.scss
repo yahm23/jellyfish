@@ -537,35 +537,35 @@ $iphoneSize : 1;
 .iphoneMock{
     @include neomorphic();
     background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
-    width: ($iphoneSize * 300px);
-    height: ($iphoneSize * 600px);
+    width: ($iphoneSize * 25vw);
+    height: ($iphoneSize * 50vw);
     position: relative;
     
 
-    transform: rotate(35deg);
+    // transform: rotate(35deg);
     overflow-x: hidden;
-    right: -68vw;
+    right: -50vw;
 }
 .screen{
     @include centerAbsolute();
-    border-radius: 6px;
-    width:($iphoneSize * 280px);
+    border-radius: 1vw;
+    width:($iphoneSize * 23vw);
     background-color:$mattDark;
     
-    margin-top: ($iphoneSize * 20px);
+    margin-top: ($iphoneSize * 2vw);
     position: absolute;
-    height: ($iphoneSize * 510px);
+    height: ($iphoneSize * 42vw);
     
 }
 
 .homeButton{
     @include centerAbsolute();
-    border-radius: 28px;
+    border-radius: 3vw;
     position: absolute;
-    bottom: ($iphoneSize * 15px);
+    bottom: ($iphoneSize * 1.5vw);
     background-color:$mattDark;
-    height:  ($iphoneSize * 40px);
-    width:  ($iphoneSize * 40px);
+    height:  ($iphoneSize * 3vw);
+    width:  ($iphoneSize * 3vw);
 }
 
 #phoneDraw{

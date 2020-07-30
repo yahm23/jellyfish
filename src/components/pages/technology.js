@@ -5,6 +5,9 @@ import Phone from '../structural/phone'
 export default function Technology() {
 
     return (
-       <Phone></Phone>
+        <div className="productPage">
+
+            <Phone></Phone>
+        </div>
     )
 }

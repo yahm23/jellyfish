@@ -545,12 +545,11 @@ ul {
   background: linear-gradient(145deg, #1d1d1d, #181818);
   box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
-  width: 300px;
-  height: 600px;
+  width: 25vw;
+  height: 50vw;
   position: relative;
-  transform: rotate(35deg);
   overflow-x: hidden;
-  right: -68vw;
+  right: -50vw;
 }
 
 .screen {
@@ -558,12 +557,12 @@ ul {
   margin-right: auto;
   left: 0;
   right: 0;
-  border-radius: 6px;
-  width: 280px;
+  border-radius: 1vw;
+  width: 23vw;
   background-color: #1B1B1B;
-  margin-top: 20px;
+  margin-top: 2vw;
   position: absolute;
-  height: 510px;
+  height: 42vw;
 }
 
 .homeButton {
@@ -571,12 +570,12 @@ ul {
   margin-right: auto;
   left: 0;
   right: 0;
-  border-radius: 28px;
+  border-radius: 3vw;
   position: absolute;
-  bottom: 15px;
+  bottom: 1.5vw;
   background-color: #1B1B1B;
-  height: 40px;
-  width: 40px;
+  height: 3vw;
+  width: 3vw;
 }
 
 #phoneDraw {
