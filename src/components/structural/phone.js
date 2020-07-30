@@ -13,7 +13,7 @@ export default function Phone() {
                     id="phoneDraw"
                     option={{
                     file: devices,
-                    duration: 180,
+                    duration: 150,
                     animTimingFunction: 'EASE',
                     type: 'delayed',
                     }}
