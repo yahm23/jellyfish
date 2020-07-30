@@ -10,9 +10,11 @@ export default function Product() {
             <div className="productBanner">
                 <div>
                     <h1 className="productBannerText">Get a view into your home you can’t get anywhere else.</h1>
-                    <h1 className="productBannerText"> See when the television turned on, or when the dryer finished its cycle. </h1>
+                    <h1 className="bannerBlurb"> See when the garage door opened, the television turned on, or when the dryer finished its cycle.</h1>
                 </div>
-                <Phone></Phone>
+                
+                    <Phone></Phone>
+                
             </div>
 
 

@@ -382,15 +382,15 @@ ul {
   }
 }
 .productPage {
-  width: 70%;
   max-width: 1200px;
   margin: 10vh auto;
   min-height: 90vh;
 }
 
 .productBanner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: repeat(1fr);
   margin-bottom: 100px;
 }
 
@@ -407,9 +407,9 @@ ul {
   color: white;
   text-align: center;
   font-size: 2.4vw;
-  font-size: 4vw;
+  margin-top: 0;
+  font-size: 5vw;
   align-self: center;
-  width: 50%;
 }
 
 @media all and (max-width: 723px) {
@@ -549,8 +549,10 @@ ul {
   width: 25vw;
   height: 50vw;
   position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  transform: rotate(25deg) translateY(7vw);
   overflow-x: hidden;
-  right: -50vw;
+  right: -15vw;
 }
 
 .screen {
