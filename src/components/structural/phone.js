@@ -24,7 +24,7 @@ export default function Phone() {
                     id="phoneDraw2"
                     option={{
                     file: graph,
-                    duration: 100,
+                    duration: 50,
                     animTimingFunction: 'EASE',
                     type: 'delayed',
                     }}
