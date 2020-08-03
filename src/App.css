@@ -503,7 +503,9 @@ ul {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 4s linear forwards;
+  stroke-dashoffset: 0;
+  animation: dash 4s forwards, move 4s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
@@ -512,9 +514,12 @@ ul {
     stroke-dashoffset: 0;
   }
 }
-@keyframes stroke_fill {
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
   100% {
-    stroke-dashoffset: 0;
+    transform: translateX(-100%);
   }
 }
 .animation {
