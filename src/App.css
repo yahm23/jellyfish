@@ -647,4 +647,9 @@ ul {
   grid-row-gap: 0px;
 }
 
+.horizontal, .vertical {
+  stroke-width: 0.1;
+  stroke: #4a667a;
+}
+
 /*# sourceMappingURL=App.css.map */
