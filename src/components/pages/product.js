@@ -34,7 +34,7 @@ export default function Product() {
                 </svg>
                 <h1>AI</h1>
                 <Graph></Graph>            
-            
+                <h1>Personalised Goals</h1>
             
             </div>
 
