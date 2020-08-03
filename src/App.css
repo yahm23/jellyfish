@@ -645,9 +645,10 @@ ul {
   text-align: center;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  align-items: center;
 }
 
-.horizontal, .vertical {
+.horizontal {
   stroke-width: 0.1;
   stroke: #4a667a;
 }
