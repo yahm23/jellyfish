@@ -614,14 +614,14 @@ ul {
 #cogs1 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate 6s infinite 0s linear;
+  animation: rotate 4s infinite 0s linear;
 }
 
 #cogs2 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate 6s infinite 0s linear;
-  animation: rotateReverse 6s infinite 0.8s linear;
+  animation: rotate 4s infinite 0s linear;
+  animation: rotateReverse 4s infinite 0.8s linear;
 }
 
 .cls-1cog {
@@ -638,6 +638,7 @@ ul {
 }
 
 .featuresGrid {
+  padding-top: 10vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -651,6 +652,10 @@ ul {
 .horizontal {
   stroke-width: 0.1;
   stroke: #4a667a;
+}
+
+.animatedFeature {
+  place-self: center;
 }
 
 /*# sourceMappingURL=App.css.map */
