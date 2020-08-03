@@ -594,4 +594,45 @@ ul {
   margin-left: 15vw;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+#cogs1 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate 6s infinite 0s linear;
+}
+
+#cogs2 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate 6s infinite 0s linear;
+  animation: rotateReverse 6s infinite 0.8s linear;
+}
+
+.cls-1cog {
+  fill: #010101;
+}
+
+.cls-2cog {
+  fill: none;
+  stroke: #010101;
+  stroke-linecap: round;
+  stroke-miterlimit: 8.03;
+  stroke-width: 3.41px;
+}
+
 /*# sourceMappingURL=App.css.map */
