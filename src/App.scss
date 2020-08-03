@@ -474,9 +474,11 @@ ul{
 
 
 .path {
-stroke-dasharray: 1000;
-stroke-dashoffset: 1000;
-animation: dash 9s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 4s linear forwards;
+    animation-iteration-count: infinite;
+
 }
 
 @keyframes dash {
@@ -610,3 +612,15 @@ $iphoneSize : 0.85;
 }
 .cls-1cog{fill:$hotPink; stroke-width:3;}
 .cls-2cog{fill:none;stroke:$hotPink;stroke-linecap:round;stroke-miterlimit:8.03;stroke-width:2;}
+
+.featuresGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    text-align: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+        
+}
+
