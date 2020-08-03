@@ -624,15 +624,16 @@ ul {
 }
 
 .cls-1cog {
-  fill: #010101;
+  fill: #E7286C;
+  stroke-width: 3;
 }
 
 .cls-2cog {
   fill: none;
-  stroke: #010101;
+  stroke: #E7286C;
   stroke-linecap: round;
   stroke-miterlimit: 8.03;
-  stroke-width: 3.41px;
+  stroke-width: 2;
 }
 
 /*# sourceMappingURL=App.css.map */

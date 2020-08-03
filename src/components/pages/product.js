@@ -32,6 +32,7 @@ export default function Product() {
                     <circle class="cls-2cog" cx="99.66" cy="86.86" r="7.78"/>
                 </g>
                 </svg>
+                
             </div>
 
 

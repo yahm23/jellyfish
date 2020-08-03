@@ -608,5 +608,5 @@ $iphoneSize : 0.85;
     @include cogAnimation();
     animation: rotateReverse 6s infinite 0.8s linear;
 }
-.cls-1cog{fill:#010101;}
-.cls-2cog{fill:none;stroke:#010101;stroke-linecap:round;stroke-miterlimit:8.03;stroke-width:3.41px;}
+.cls-1cog{fill:$hotPink; stroke-width:3;}
+.cls-2cog{fill:none;stroke:$hotPink;stroke-linecap:round;stroke-miterlimit:8.03;stroke-width:2;}
