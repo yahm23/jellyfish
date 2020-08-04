@@ -16,12 +16,12 @@ import ScrollPosition from '../structural/scrollPosition.js'
 
 const Landing = () => {
     AOS.init();
-    let isMobile = useMediaQuery({ maxWidth: 767 });
+    let isMobile = useMediaQuery({ maxWidth: 723 });
 
     const ArrowBounce = (id) => {
         return (
             <div className="arrow bounce">
-                <a  href={id}><img width="5%" src={Chevron}></img></a>
+                <a  href={id}><img width="25vw" src={Chevron}></img></a>
             </div>
         )
     }
@@ -48,7 +48,7 @@ const Landing = () => {
                         <img  src={JellyDevice} width= "90%" height="auto"/> 
                     </div>
                 </div>
-                {ArrowBounce('#section1')}
+                    {ArrowBounce('#section1')}
             </div>
         )
     }
@@ -91,13 +91,15 @@ const Landing = () => {
                     <h2 data-aos-duration="3000" data-aos="zoom-in"  className="subheading inline animatedBetter">  better </h2></>
                  :
                  <h2 className="subheading inline"> more. </h2>}
-
-                <div className='squareIcons'>
-                    {Icon(leccy,"Monitor your electric use at any time")}
-                    {Icon(money,"Save money by reducing your electric bill")}
-                    {Icon(tree,"Reduce your carbon footprint")}
-                    {Icon(time,"Real-time readings of your electrical use")}
-                </div>
+                
+                
+                    <div className='squareIcons'>
+                        {Icon(leccy,"Monitor your electric use at any time")}
+                        {Icon(money,"Save money by reducing your electric bill")}
+                        {Icon(tree,"Reduce your carbon footprint")}
+                        {Icon(time,"Real-time readings of your electrical use")}
+                    </div>
+                    
                 {ArrowBounce('#section3')}
             </div>
         )
@@ -108,7 +110,7 @@ const Landing = () => {
             <div id="section3">
                 <h2 className="subheading">Our technology is unique.</h2>
                 <div className="device">
-                    <img className="jellyInUse" width="450px"src={jellyInUse}/>
+                    <img className="jellyInUse" width="55%"src={jellyInUse}/>
                     <h2 className = "box1"> The device is installed simply by clamping directly into your electric panel. </h2>
                     <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     <h2 className = "box1"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>

@@ -60,7 +60,7 @@ html {
 
 .bannerItems{
     display: flex;
-    padding-top: 2%;
+    padding-top: 1vh;
 
 }
 
@@ -69,7 +69,7 @@ html {
     text-align: center;
     margin: 0 auto;
     margin-top: 2vh;
-    min-height: 80vh;
+    min-height: 87vh;
     width: 90%;
 }
 @mixin bannerTitle{
@@ -166,14 +166,15 @@ html {
 }
 .phonePreviewContainer{ 
     width: 90%;
+    height: 70vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 40% 10% 50%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: 25%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-bottom: 8vh;
-    margin-top: 2vh;
+    // margin-bottom: 8vh;
+    // margin-top: 2vh;
     
 }
 
@@ -194,13 +195,15 @@ html {
     font-size: 2.5vw;
     font-weight: 100;
     align-self: center;
-    padding: 3%;
+    
+    margin: 0;
+    padding-left: 3%;
 
 }
 
 .iphoneScreen{
     justify-self: right;
-    height: 100%;
+    height: 90%;
     padding-top: 25px;
     grid-area: 1 / 1 / 4 / 2; 
 }
@@ -212,7 +215,7 @@ html {
 }
 @mixin pageSection{
     position: relative;
-    padding-top: 5vh;
+    padding-top: 3vh;
     width: 85%;
     margin: 0 auto;
     min-height: 100vh;
@@ -243,7 +246,7 @@ html {
 #section4{
     @include pageSection();
     min-height:auto !important;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 #biggerBuy{
     margin-top: 10%;
@@ -272,8 +275,10 @@ html {
     @include neomorphic();
     position: relative;
     color: white;
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 9vw;
+    height: 9vw;
 }
 .squareIcons{
     margin-top: 5vh;
@@ -309,14 +314,14 @@ html {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-around;
     // width: 90%;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 .jellyInUse{
-    grid-area: 1 / 2 / 5 / 3;
+    grid-area: 1 / 2 / 3 / 3;
     justify-self: center;
     @include neomorphic()
     
@@ -527,6 +532,9 @@ min-height: auto
 
 #box1{
     justify-self: right;
+}
+#box1,#box2{
+    font-size: 2.3vw;
 }
 .deviceAnim {
     justify-self: center;
