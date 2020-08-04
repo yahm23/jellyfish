@@ -500,6 +500,152 @@ ul {
     display: block;
     margin: 5vh auto;
   }
+
+  .productBanner {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    grid-template-columns: 90%;
+    grid-template-rows: 25%;
+    justify-content: center;
+  }
+
+  .leadingGridTextPhone {
+    margin-left: 0 !important;
+  }
+
+  .productBannerText {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .productBannerBlurb {
+    margin: 0 !important;
+    font-size: 22px;
+    text-align: left;
+    width: 80%;
+  }
+}
+@media all and (max-width: 723px) {
+  .iphoneMock {
+    border-radius: 21px;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
+    background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+    border-radius: 1vw;
+    width: 46.25vw;
+    height: 92.5vw;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    transform: rotate(30deg) translateY(-5vw) translateX(50vw);
+    overflow-x: hidden;
+    right: -5vw;
+  }
+
+  .screen {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 1vw;
+    width: 42.55vw;
+    background-color: #1B1B1B;
+    top: 3.7vw;
+    height: 77.7vw;
+  }
+
+  .homeButton {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 4vw;
+    position: absolute;
+    bottom: 2.775vw;
+    background-color: #1B1B1B;
+    height: 5.55vw;
+    width: 5.55vw;
+  }
+
+  #phoneDraw {
+    margin: 1.85vw auto;
+  }
+
+  .featuresGrid {
+    padding-top: 10vw;
+    display: grid;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+  }
+}
+@media all and (min-width: 723px) {
+  .iphoneMock {
+    border-radius: 21px;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
+    background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+    border-radius: 1vw;
+    width: 21.25vw;
+    height: 42.5vw;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    transform: rotate(25deg) translateY(10vw);
+    overflow-x: hidden;
+    right: -5vw;
+  }
+
+  .screen {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 1vw;
+    width: 19.55vw;
+    background-color: #1B1B1B;
+    top: 1.7vw;
+    height: 35.7vw;
+  }
+
+  .homeButton {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 4vw;
+    bottom: 1.275vw;
+    background-color: #1B1B1B;
+    height: 2.55vw;
+    width: 2.55vw;
+  }
+
+  #phoneDraw {
+    margin: 0.85vw auto;
+  }
+
+  .featuresGrid {
+    padding-top: 10vw;
+    display: grid;
+    width: 70vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    text-align: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+  }
 }
 .path {
   stroke-dasharray: 1000;
@@ -556,51 +702,6 @@ ul {
   justify-self: center;
 }
 
-.iphoneMock {
-  border-radius: 21px;
-  background: linear-gradient(145deg, #1d1d1d, #181818);
-  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
-  background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
-  border-radius: 1vw;
-  width: 21.25vw;
-  height: 42.5vw;
-  position: relative;
-  grid-template-columns: repeat(2, 1fr);
-  transform: rotate(25deg) translateY(10vw);
-  overflow-x: hidden;
-  right: -5vw;
-}
-
-.screen {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  border-radius: 1vw;
-  width: 19.55vw;
-  background-color: #1B1B1B;
-  top: 1.7vw;
-  position: absolute;
-  height: 35.7vw;
-}
-
-.homeButton {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  border-radius: 3vw;
-  position: absolute;
-  bottom: 1.275vw;
-  background-color: #1B1B1B;
-  height: 2.55vw;
-  width: 2.55vw;
-}
-
-#phoneDraw {
-  margin: 0.85vw auto;
-}
-
 .leadingGridTextPhone {
   margin-left: 15vw;
 }
@@ -647,18 +748,6 @@ ul {
   stroke-width: 2;
 }
 
-.featuresGrid {
-  padding-top: 10vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-flow: column;
-  text-align: center;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  align-items: center;
-}
-
 .horizontal {
   stroke-width: 0.1;
   stroke: #4a667a;
@@ -666,6 +755,11 @@ ul {
 
 .animatedFeature {
   place-self: center;
+}
+
+.featuresGridText {
+  font-family: "Quicksand", sans-serif;
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */

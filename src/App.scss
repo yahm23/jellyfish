@@ -164,6 +164,12 @@ html {
     right: 0;
     text-align: center;
 }
+// @mixin centerAbsolute{
+//     margin-left: auto;
+//     margin-right: auto;
+//     left: 0;
+//     right: 0;
+// }
 .phonePreviewContainer{ 
     width: 90%;
     height: 70vh;
@@ -396,7 +402,7 @@ ul{
     @include whiteRegularFont();
     margin-top: 0;
     font-size: 5.5vw;
-    text-align: left;    // width: 50%;
+    text-align: left;   
 }
 .productBannerBlurb{
     @include whiteRegularFont();
@@ -476,8 +482,140 @@ ul{
         display: block;
         margin: 5vh auto;
     }
+    .productBanner{
+        @include whiteRegularFont();
+        grid-template-columns: 90%;
+        grid-template-rows: 25%;
+        justify-content: center;
+    }
+    .leadingGridTextPhone {
+        margin-left: 0 !important;
+    }
+    .productBannerText {
+        font-size: 40px;
+        text-align: center;
+    }
+    .productBannerBlurb {
+        margin: 0 !important;
+        font-size: 22px;
+        text-align: left;
+        width: 80%;
+    }
 }
 
+@media all and (max-width: 723px) {
+    // IPHONE MOCK MOBILE
+    $enlargementFactor : 1.85;
+    .iphoneMock{
+        @include neomorphic();
+        background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+        border-radius: 1vw;
+        width: ($enlargementFactor * 25vw);
+        height: ($enlargementFactor * 50vw);
+        position: relative;
+        
+        grid-template-columns: repeat(2, 1fr);
+    
+        transform:rotate(30deg) translateY(-5vw) translateX(50vw);
+        overflow-x: hidden;
+        right:-5vw;
+    }
+    .screen{
+        @include absolutePosCentering();
+        border-radius: 1vw;
+        width:($enlargementFactor * 23vw);
+        background-color:$mattDark;
+        
+        top: ($enlargementFactor * 2vw);
+        height: ($enlargementFactor * 42vw);
+        
+    }
+    
+    .homeButton{
+        @include absolutePosCentering();
+        border-radius: 4vw;
+        position: absolute;
+        bottom: ($enlargementFactor * 1.5vw);
+        background-color:$mattDark;
+        height:  ($enlargementFactor * 3vw);
+        width:  ($enlargementFactor * 3vw);
+    }
+    
+    #phoneDraw{
+        
+        margin: ($enlargementFactor * 1vw) auto;
+    }
+    
+    .featuresGrid{
+        padding-top: 10vw;
+        display: grid;
+        width: 70vw;
+        margin: 0 auto;        
+        text-align: center;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: center;
+    }
+}
+@media all and (min-width: 723px) {
+    // NOT-mobile
+    $enlargementFactor : 0.85;
+
+    .iphoneMock{
+        @include neomorphic();
+        background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
+        border-radius: 1vw;
+        width: ($enlargementFactor * 25vw);
+        height: ($enlargementFactor * 50vw);
+        position: relative;
+        
+        grid-template-columns: repeat(2, 1fr);
+    
+        transform: rotate(25deg) translateY(10vw);
+        overflow-x: hidden;
+        right:-5vw;
+    }
+    .screen{
+        @include absolutePosCentering();
+        border-radius: 1vw;
+        width:($enlargementFactor * 23vw);
+        background-color:$mattDark;
+        
+        top: ($enlargementFactor * 2vw);
+        height: ($enlargementFactor * 42vw);
+        
+    }
+    
+    .homeButton{
+        @include absolutePosCentering();
+        border-radius: 4vw;
+        bottom: ($enlargementFactor * 1.5vw);
+        background-color:$mattDark;
+        height:  ($enlargementFactor * 3vw);
+        width:  ($enlargementFactor * 3vw);
+    }
+    
+    #phoneDraw{
+        
+        margin: ($enlargementFactor * 1vw) auto;
+    }
+
+    .featuresGrid{
+        padding-top: 10vw;
+        display: grid;
+        width: 70vw;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        text-align: center;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: center;
+        // justify-items: center;
+    }
+
+}
 
 
 .path {
@@ -542,54 +680,9 @@ min-height: auto
 
 
 
-$iphoneSize : 0.85;
+// $iphoneSize : 0.85;
 
-@mixin centerAbsolute{
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
-.iphoneMock{
-    @include neomorphic();
-    background: linear-gradient(145deg, #0f0f0f, #0e0d0d);
-    border-radius: 1vw;
-    width: ($iphoneSize * 25vw);
-    height: ($iphoneSize * 50vw);
-    position: relative;
-    
-    grid-template-columns: repeat(2, 1fr);
 
-    transform: rotate(25deg) translateY(10vw);
-    overflow-x: hidden;
-    right:-5vw;
-}
-.screen{
-    @include centerAbsolute();
-    border-radius: 1vw;
-    width:($iphoneSize * 23vw);
-    background-color:$mattDark;
-    
-    top: ($iphoneSize * 2vw);
-    position: absolute;
-    height: ($iphoneSize * 42vw);
-    
-}
-
-.homeButton{
-    @include centerAbsolute();
-    border-radius: 3vw;
-    position: absolute;
-    bottom: ($iphoneSize * 1.5vw);
-    background-color:$mattDark;
-    height:  ($iphoneSize * 3vw);
-    width:  ($iphoneSize * 3vw);
-}
-
-#phoneDraw{
-    
-    margin: ($iphoneSize * 1vw) auto;
-}
 
 .leadingGridTextPhone{
    margin-left: 15vw;
@@ -628,18 +721,7 @@ $iphoneSize : 0.85;
 .cls-1cog{fill:$hotPink; stroke-width:3;}
 .cls-2cog{fill:none;stroke:$hotPink;stroke-linecap:round;stroke-miterlimit:8.03;stroke-width:2;}
 
-.featuresGrid{
-    padding-top: 10vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-flow: column;
-    text-align: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    align-items: center;
-    // justify-items: center;
-}
+
 
 
 .horizontal {
@@ -651,3 +733,6 @@ $iphoneSize : 0.85;
     place-self: center;
 }
 
+.featuresGridText{
+    @include whiteRegularFont();
+}

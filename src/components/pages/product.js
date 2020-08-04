@@ -31,12 +31,20 @@ export default function Product() {
                 <div className="animatedFeature">
                     <AI></AI>
                 </div>
+                <div>
+                    <h1 className="featuresGridText">AI</h1>
+                    <h2 className="featuresGridText">Ask jellyfish anything, & let our AI do the leg work for you.</h2>
+                </div>
 
-                <h1>AI</h1>
+
                 <Graph></Graph>            
-                <h1>Personalised Goals</h1>
-                <div className="animatedFeature">
+                <div>
+                    <h1 className="featuresGridText">Personalised Goals</h1>
+                    <h2 className="featuresGridText">Personalised Goals</h2>
+                </div>
 
+
+                <div className="animatedFeature">
                     <SplitFlapDisplay
                         className="animatedFeature"
                         characterSet={['0', '1', '2', '3', '4', '5','6','7','8', '9']}
@@ -46,8 +54,10 @@ export default function Product() {
                         textColor = "#1B1B1B"
                     />
                 </div>
-
-                <h1>Real time tracking</h1>
+                <div>
+                    <h1 className="featuresGridText">Real time tracking</h1>
+                    <h2 className="featuresGridText">Real time tracking</h2>
+                </div>
                 
             </div>
 
