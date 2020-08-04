@@ -4,6 +4,8 @@ import SplitFlapDisplay from 'react-split-flap-display';
 import Phone from '../structural/phone';
 import Graph from '../structural/animatedFeatures/graph';
 import AI from '../structural/animatedFeatures/aiCogs';
+import { useMediaQuery } from 'react-responsive';
+
 
 export default function Product() {
     const[reading, setReading] = useState(90)
@@ -15,6 +17,8 @@ export default function Product() {
    
     }, [])
 
+    let isMobile = useMediaQuery({ maxWidth: 723 });
+
 
     return (
         <div className="productPage">
@@ -22,6 +26,7 @@ export default function Product() {
                 <div className ="leadingGridTextPhone">
                     <h1 className="productBannerText">Get a view into your home you can’t get anywhere else.</h1>
                     <h1 className="productBannerBlurb"> See when the garage door opened, the television turned on, or when the dryer finished its cycle.</h1>
+                    {isMobile? <h1 className="productMobileArrow" >↓</h1>:<></>}
                 </div>
                 <Phone></Phone>
             </div>

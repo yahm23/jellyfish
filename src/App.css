@@ -507,6 +507,8 @@ ul {
     grid-template-columns: 90%;
     grid-template-rows: 25%;
     justify-content: center;
+    min-height: 90vh;
+    position: relative;
   }
 
   .leadingGridTextPhone {
@@ -514,15 +516,20 @@ ul {
   }
 
   .productBannerText {
-    font-size: 40px;
+    font-size: 11vw;
     text-align: center;
   }
 
   .productBannerBlurb {
     margin: 0 !important;
-    font-size: 22px;
+    font-size: 7vw;
     text-align: left;
-    width: 80%;
+    width: 90%;
+  }
+
+  .productMobileArrow {
+    margin: 10vh 0;
+    font-size: 23vw;
   }
 }
 @media all and (max-width: 723px) {
@@ -534,9 +541,9 @@ ul {
     border-radius: 1vw;
     width: 46.25vw;
     height: 92.5vw;
-    position: relative;
+    position: absolute;
     grid-template-columns: repeat(2, 1fr);
-    transform: rotate(30deg) translateY(-5vw) translateX(50vw);
+    transform: rotate(27deg) translateY(70vw) translateX(46vw);
     overflow-x: hidden;
     right: -5vw;
   }
