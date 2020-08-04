@@ -105,7 +105,7 @@ html {
     @include whiteRegularFont();
     background-color: $hotPink;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 16px;
     border: none;
     border-radius: 12px;
     padding: 10px;;
@@ -168,7 +168,7 @@ html {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 0.6fr 0.2fr 1fr;
+    grid-template-columns: 40% 10% 50%;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -388,7 +388,7 @@ ul{
 .productBannerText{
     @include whiteRegularFont();
     margin-top: 0;
-    font-size: 6vw;
+    font-size: 5.5vw;
     text-align: left;    // width: 50%;
 }
 .productBannerBlurb{
