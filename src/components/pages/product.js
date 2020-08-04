@@ -26,7 +26,7 @@ export default function Product() {
                 <div className ="leadingGridTextPhone">
                     <h1 className="productBannerText">Get a view into your home you can’t get anywhere else.</h1>
                     <h1 className="productBannerBlurb"> See when the garage door opened, the television turned on, or when the dryer finished its cycle.</h1>
-                    {isMobile? <h1 className="productMobileArrow" >↓</h1>:<></>}
+                    {/* {isMobile? <h1 className="productMobileArrow" >↓</h1>:<></>} */}
                 </div>
                 <Phone></Phone>
             </div>
