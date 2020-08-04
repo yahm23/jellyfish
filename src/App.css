@@ -44,7 +44,7 @@ html {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  margin-top: 8vh;
+  margin-top: 2vh;
   min-height: 80vh;
   width: 90%;
 }
@@ -176,7 +176,7 @@ html {
   box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   font-family: "Quicksand", sans-serif;
   color: white;
-  font-size: 200%;
+  font-size: 2.5vw;
   font-weight: 100;
   align-self: center;
   padding: 3%;

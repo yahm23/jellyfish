@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../media/jelly.svg'
 import IphoneScreen from '../media/jellyfishAppTemp.png'
 import Chevron from '../media/chevvy.svg'
 import leccy from '../media/icons/leccy.png'
@@ -8,17 +7,11 @@ import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
 import JellyDevice from '../media/jellyDevice.png'
 import jellyInUse from '../media/jellyInUse.png'
-import plug from '../media/plug.svg'
 import { useMediaQuery } from 'react-responsive'
 
-import anime from 'animejs'
-import Anime from 'react-anime'
 
 import AOS from 'aos'
-import Animation from '../structural/animation.js'
 import ScrollPosition from '../structural/scrollPosition.js'
-import { getElementError } from '@testing-library/react'
-import WireDeviceAnimation from '../structural/wireDeviceAnimation'
 
 
 const Landing = () => {
@@ -28,7 +21,7 @@ const Landing = () => {
     const ArrowBounce = (id) => {
         return (
             <div className="arrow bounce">
-                <a  href={id}><img width="80px" src={Chevron}></img></a>
+                <a  href={id}><img width="5%" src={Chevron}></img></a>
             </div>
         )
     }
@@ -52,7 +45,7 @@ const Landing = () => {
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
                     </div>
                     <div>
-                        <img  src={JellyDevice} width= "100%" height="auto"/> 
+                        <img  src={JellyDevice} width= "90%" height="auto"/> 
                     </div>
                 </div>
                 {ArrowBounce('#section1')}
