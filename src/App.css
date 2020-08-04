@@ -151,11 +151,11 @@ html {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 40% 10% 50%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 30% 30% 30%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-bottom: 8vh;
-  margin-top: 8vh;
+  margin-top: 2vh;
 }
 
 [data-aos=anim1].aos-animate {
@@ -171,9 +171,6 @@ html {
 }
 
 .feature {
-  border-radius: 21px;
-  background: linear-gradient(145deg, #1d1d1d, #181818);
-  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
   font-family: "Quicksand", sans-serif;
   color: white;
   font-size: 2.5vw;
@@ -196,7 +193,7 @@ html {
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 5vh;
+  bottom: 4vh;
   text-align: center;
 }
 
@@ -213,7 +210,7 @@ html {
 #section1 {
   position: relative;
   padding-top: 5vh;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -221,7 +218,7 @@ html {
 #section2 {
   position: relative;
   padding-top: 5vh;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -229,7 +226,7 @@ html {
 #section3 {
   position: relative;
   padding-top: 5vh;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -237,7 +234,7 @@ html {
 #section4 {
   position: relative;
   padding-top: 5vh;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 100vh;
   min-height: auto !important;
@@ -258,12 +255,14 @@ html {
   font-family: "Quicksand", sans-serif;
   color: white;
   display: grid;
-  grid-template-columns: 130px 520px;
+  grid-template-columns: 11vw 40vw;
   grid-template-rows: 1fr;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .iconText {
+  margin: 0;
+  font-size: 2vw;
   align-self: center;
 }
 
@@ -278,7 +277,7 @@ html {
 }
 
 .squareIcons {
-  margin-top: 10vh;
+  margin-top: 5vh;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;

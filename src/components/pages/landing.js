@@ -1,5 +1,5 @@
 import React from 'react'
-import IphoneScreen from '../media/jellyfishAppTemp.png'
+import IphoneScreen from '../media/jellyfishWithIphone.png'
 import Chevron from '../media/chevvy.svg'
 import leccy from '../media/icons/leccy.png'
 import time from '../media/icons/time.png'
