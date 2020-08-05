@@ -37,15 +37,17 @@ export default function Product() {
                     <AI></AI>
                 </div>
                 <div>
-                    <h1 className="featuresGridText">AI</h1>
-                    <h2 className="featuresGridText">Ask jellyfish anything, & let our AI do the leg work for you.</h2>
+                    <h4 className="featuresGridText">AI</h4>
+                    <h5 className="featuresGridText">Ask jellyfish anything, & let our AI do the leg work for you.</h5>
                 </div>
 
 
-                <Graph></Graph>            
+                <div className="">
+                    <Graph></Graph>            
+                </div>
                 <div>
-                    <h1 className="featuresGridText">Personalised Goals</h1>
-                    <h2 className="featuresGridText">Personalised Goals</h2>
+                    <h4 className="featuresGridText">Personalised Goals</h4>
+                    <h5 className="featuresGridText">Check you are routinely meeting your energy goals.</h5>
                 </div>
 
 
@@ -60,8 +62,8 @@ export default function Product() {
                     />
                 </div>
                 <div>
-                    <h1 className="featuresGridText">Real time tracking</h1>
-                    <h2 className="featuresGridText">Real time tracking</h2>
+                    <h4 className="featuresGridText"> Real time tracking </h4>
+                    <h5 className="featuresGridText"> Monitor energy usage in real-time; see what's being used and how much it's using.</h5>
                 </div>
                 
             </div>

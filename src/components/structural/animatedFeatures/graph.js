@@ -6,12 +6,7 @@ export default function Graph() {
             <svg  viewBox="0 0 315 107" version="1.1">
                 <defs>
                     
-                    <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
-                        <stop stopColor="#ADD476" offset="0%"></stop>
-                        <stop stopColor="#E7286C" offset="25%"></stop>
-                        <stop stopColor="#ADD476" offset="90%"></stop>
-                    </linearGradient>
-
+   
                 </defs>
                 <g viewBox="0 0 315 107" id="grid">
                     <path className="horizontal" d="M.8.8H314.71"/>
