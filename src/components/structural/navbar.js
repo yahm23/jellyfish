@@ -4,8 +4,9 @@ import Modal from 'react-bootstrap/Modal'
 import NavbarBrand from 'react-bootstrap/NavbarBrand'
 import {Link} from "react-router-dom";
 import Logo from '../media/jelly.svg'
+import Comment from '../media/icons/comment.png'
+import Tech from '../media/icons/chodeCable.png'
 import { useMediaQuery } from 'react-responsive'
-import Button from 'react-bootstrap/Button';
 
 const NavbarTop = () => {
     const[hamburgerActive,toggle] = useState(false)
@@ -36,14 +37,31 @@ const NavbarTop = () => {
                     <Modal show={hamburgerActive} onHide={clickHandler}>
                         
                         <Modal.Body>
-                            <NavbarBrand href="/">Home</NavbarBrand>
+                            
+                            <NavbarBrand href="/">
+                                <img height="25px" src= {Logo} style={{marginRight:10}} />
+                                Home
+                            </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
-                            <NavbarBrand href="/products">Products</NavbarBrand>
+
+                            <NavbarBrand href="/products">
+                                <img height="25px" src= {Logo} style={{marginRight:10}} />
+                                Products
+                            </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
-                            <NavbarBrand href="/technology">Technology</NavbarBrand>
+
+                            <NavbarBrand href="/technology">
+                                <img height="30px" src= {Tech} style={{marginRight:10}} />
+                                 Technology
+                            </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
-                            <NavbarBrand href="/contact">Contact</NavbarBrand>
+
+                            <NavbarBrand href="/contact">
+                                <img height="25px" src= {Comment} style={{marginRight:10}} />
+                                Contact
+                            </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
+
                         </Modal.Body>
                        
                     </Modal>
