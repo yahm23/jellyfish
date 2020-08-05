@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Modal from 'react-bootstrap/Modal'
 import NavbarBrand from 'react-bootstrap/NavbarBrand'
@@ -8,19 +8,32 @@ import boiger from '../media/Hamburger_icon.svg'
 import { useMediaQuery } from 'react-responsive'
 
 const NavbarTop = () => {
+    const[hamburgerActive,toggle] = useState(false)
+
     let isMobile = useMediaQuery({ maxWidth: 767 });
+
+    const clickHandler = () =>{
+        toggle(!hamburgerActive)
+
+    }
+
+
     return (
         <div>{ isMobile? 
             <div className="entireNavbar">
                 <Link to="/"><img className="logo" src={Logo}></img></Link>
-                <img className="logo" src={boiger}></img>
+                <button onClick={clickHandler} className={  "hamburger hamburger--squeeze "  +(hamburgerActive? "is-active":"")} type="button">
+                    <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
             
             :
             <div className="entireNavbar">
                     <Link to="/"><img className="logo" src={Logo}></img></Link>
                 
-                    <Navbar className = "navbar" expand="lg" variant="light" bg="light">
+                        <Navbar className = "navbar" expand="lg" variant="light" bg="light">
                         <NavbarBrand href="/products">Products</NavbarBrand>
                         <NavbarBrand href="/technology">Technology</NavbarBrand>
                         <NavbarBrand href="/support">Support</NavbarBrand>

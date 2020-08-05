@@ -209,6 +209,7 @@ const Landing = () => {
     }
     return (
         <div>
+            
             {isMobile? 
             <MobileLanding></MobileLanding> :
             <NormalLanding></NormalLanding>}
