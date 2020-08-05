@@ -4,7 +4,6 @@ import Modal from 'react-bootstrap/Modal'
 import NavbarBrand from 'react-bootstrap/NavbarBrand'
 import {Link} from "react-router-dom";
 import Logo from '../media/jelly.svg'
-import boiger from '../media/Hamburger_icon.svg'
 import { useMediaQuery } from 'react-responsive'
 import Button from 'react-bootstrap/Button';
 

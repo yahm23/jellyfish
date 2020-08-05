@@ -35,8 +35,8 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 25px;
+  height: 18px;
   display: inline-block;
   position: relative;
 }
@@ -44,11 +44,11 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 25px;
+  height: 2px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
@@ -61,10 +61,10 @@
   display: block;
 }
 .hamburger-inner::before {
-  top: -10px;
+  top: -8px;
 }
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: -8px;
 }
 
 /*
@@ -612,7 +612,7 @@ ul {
     grid-template-columns: 90%;
     grid-template-rows: 25%;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 70vh;
     position: relative;
   }
 
@@ -626,9 +626,9 @@ ul {
   }
 
   .productBannerBlurb {
-    margin: 0 !important;
     font-size: 7vw;
     text-align: left;
+    margin-top: 5vh;
     width: 90%;
   }
 
@@ -648,7 +648,7 @@ ul {
     height: 92.5vw;
     position: absolute;
     grid-template-columns: repeat(2, 1fr);
-    transform: rotate(27deg) translateY(70vw) translateX(46vw);
+    transform: rotate(27deg) translateY(30vh) translateX(43vw);
     overflow-x: hidden;
     right: -5vw;
   }
@@ -689,11 +689,9 @@ ul {
   .featuresGrid {
     padding-top: 10vw;
     display: grid;
-    width: 70vw;
-    margin: 0 auto;
     text-align: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    column-gap: 0px;
+    row-gap: 15vh;
     align-items: center;
   }
 }
@@ -900,6 +898,19 @@ ul {
 .grIFex {
   position: relative;
   overflow: visible !important;
+}
+
+* {
+  box-sizing: content-box !important;
+}
+
+.graphAnimated {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.mobileFeatureText {
+  margin-top: 5vh;
 }
 
 /*# sourceMappingURL=App.css.map */
