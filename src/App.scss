@@ -1,4 +1,5 @@
 @import "./scssFiles/hamburgers.scss";
+// @import 'bootstrap/dist/css/bootstrap.min.css';
 
 @font-face {
     font-family: 'GilroyHeavy';
@@ -114,6 +115,8 @@ html {
 }
 .entireNavbar{
     // border-bottom: $off-White 1px solid;
+    position: relative;
+    z-index: 2000;
     display: flex;
     justify-content: space-between;
 }
@@ -349,6 +352,7 @@ html {
     padding: 5% 15%;
     display: flex;
     justify-content: center;
+    box-sizing: content-box;
 }
 .footerSubs{
     // text-align: center;
@@ -747,73 +751,20 @@ min-height: auto
     @include whiteRegularFont();
 }
 
-
-
-// .hamburger {
-//     padding: 15px 15px;
-//     display: inline-block;
-//     cursor: pointer;
-//     transition-property: opacity, filter;
-//     transition-duration: 0.15s;
-//     transition-timing-function: linear;
-//     font: inherit;
-//     color: inherit;
-//     text-transform: none;
-//     background-color: transparent;
-//     border: 0;
-//     margin: 0;
-//     overflow: visible; }
-// .hamburger:hover {opacity: 0.7}
-// .hamburger.is-active:hover {opacity: 0.7}
-// .hamburger.is-active .hamburger-inner,
-// .hamburger.is-active .hamburger-inner::before,
-// .hamburger.is-active .hamburger-inner::after {background-color: #000}
-
-// .hamburger-box {
-//     width: 40px;
-//     height: 24px;
-//     display: inline-block;
-//     position: relative
-// }
-
-// .hamburger-inner {
-//     display: block;
-//     top: 50%;
-//     margin-top: -2px
-// }
-
-// .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-//     width: 40px;
-//     height: 4px;
-//     background-color: #000;
-//     border-radius: 4px;
-//     position: absolute;
-//     transition-property: transform;
-//     transition-duration: 0.15s;
-//     transition-timing-function: ease
-// }
-// .hamburger-inner::before, .hamburger-inner::after { content: ""; ndisplay: block; }
-// .hamburger-inner::before {top: -10px}
-// .hamburger-inner::after { bottom: -10px}
-
-
-// .hamburger--squeeze .hamburger-inner {
-//     transition-duration: 0.075s;
-//     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-//     .hamburger--squeeze .hamburger-inner::before {
-//       transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
-//     .hamburger--squeeze .hamburger-inner::after {
-//       transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  
-//   .hamburger--squeeze.is-active .hamburger-inner {
-//     transform: rotate(45deg);
-//     transition-delay: 0.12s;
-//     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-//     .hamburger--squeeze.is-active .hamburger-inner::before {
-//       top: 0;
-//       opacity: 0;
-//       transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
-//     .hamburger--squeeze.is-active .hamburger-inner::after {
-//       bottom: 0;
-//       transform: rotate(-90deg);
-//       transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.modal-content{
+    height:calc(100vh - (55px + 5vmin));
+    margin-top:calc(55px + 5vmin) ;
+    border: none;
+}
+.modal-dialog{
+    margin:0;
+}
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-body{
+    background-color: #1B1B1B;
+}
+.modal.fade .modal-dialog {
+    transition: none;
+}

@@ -30,7 +30,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
+  background-color: white;
 }
 
 .hamburger-box {
@@ -48,7 +48,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: white;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -185,6 +185,8 @@ html {
 }
 
 .entireNavbar {
+  position: relative;
+  z-index: 2000;
   display: flex;
   justify-content: space-between;
 }
@@ -446,6 +448,7 @@ html {
   padding: 5% 15%;
   display: flex;
   justify-content: center;
+  box-sizing: content-box;
 }
 
 .footerSubs {
@@ -863,6 +866,28 @@ ul {
 .featuresGridText {
   font-family: "Quicksand", sans-serif;
   color: white;
+}
+
+.modal-content {
+  height: calc(100vh - (55px + 5vmin));
+  margin-top: calc(55px + 5vmin);
+  border: none;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+.modal-body {
+  background-color: #1B1B1B;
+}
+
+.modal.fade .modal-dialog {
+  transition: none;
 }
 
 /*# sourceMappingURL=App.css.map */
