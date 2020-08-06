@@ -75,7 +75,7 @@ html {
     margin: 0 auto;
     margin-top: 2vh;
     min-height: 87vh;
-    width: 90%;
+    width: 70%;
 }
 @mixin bannerTitle{
     color: white;
@@ -265,8 +265,8 @@ html {
     margin-bottom: 10vh;
 }
 #biggerBuy{
-    margin-top: 10%;
-    font-size: 30px;
+    margin-top: 4vh;
+    font-size: 2vw;
     border-radius: 20px;
 }
 .getStarted{
@@ -441,7 +441,8 @@ ul{
     
     .bannerBlurb{
         @include bannerBlurb();
-        font-size: 130%;
+        margin-top: 3vh;
+        font-size: 4.5vw;
     }
 
     .iphoneScreen{
@@ -457,7 +458,7 @@ ul{
     }
     .mobileText{
         font-size: 120%;
-        text-align: left;
+        text-align: center;
         padding:0;
         padding-top: 3vh;
     }
@@ -521,6 +522,11 @@ ul{
         margin: 10vh 0;
         font-size: 23vw;
     }
+    #biggerBuy {
+        margin-top: 4vh;
+        font-size: 5vw;
+        border-radius: 20px;
+    }
     
 }
 
@@ -570,6 +576,8 @@ ul{
     .featuresGrid{
         padding-top: 10vw;
         display: grid;       
+        grid-template-columns: 70%;
+        justify-content: center;
         text-align: center;
         column-gap: 0px;
         row-gap: 15vh;
@@ -784,9 +792,10 @@ min-height: auto
 }
 .graphAnimated{
     margin: 0 auto;
-    width: 50%;
+    width: max-content;
 }
 
 .mobileFeatureText{
-    margin-top: 5vh;
+    width: 70%;
+    margin: 4vh auto;
 }

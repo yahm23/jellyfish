@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactVivus from 'react-vivus';
-import devices from '../media/devices.svg'
-import graph from '../media/bars.svg'
+import devices from '../../media/devices.svg'
+import graph from '../../media/bars.svg'
 
 export default function Phone() {
     return (

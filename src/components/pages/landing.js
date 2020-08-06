@@ -44,7 +44,7 @@ const Landing = () => {
                         <h1 className="bannerTitle" >of your energy use</h1>
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
                     </div>
-                    <div>
+                    <div style={{alignSelf:'center'}}>
                         <img  src={JellyDevice} width= "90%" height="auto"/> 
                     </div>
                 </div>
@@ -199,6 +199,10 @@ const Landing = () => {
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     </div>
+                    <div className="bannerText">
+                        <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+                    </div>
+
                     {/* Scroll vlaue to trigger animation should be passed in  */}
                     {/* {WireDeviceAnimation(9,8)} */}
                 </div>

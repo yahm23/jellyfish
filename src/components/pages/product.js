@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import SplitFlapDisplay from 'react-split-flap-display';
-import Phone from '../structural/phone';
+import Phone from '../structural/animatedFeatures/phone';
 import Graph from '../structural/animatedFeatures/graph';
 import AI from '../structural/animatedFeatures/aiCogs';
 import { useMediaQuery } from 'react-responsive';
