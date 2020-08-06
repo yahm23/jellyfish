@@ -169,8 +169,8 @@ html {
 }
 
 .logo {
-  margin: 5vmin;
-  height: calc(7vmin);
+  margin: 9vmin;
+  height: calc(10vmin);
 }
 
 .deviceMobile {
@@ -195,12 +195,12 @@ html {
   position: relative;
   z-index: 2000;
   display: flex;
+  height: 15vh;
   justify-content: space-between;
 }
 
 .navbar {
   width: 75%;
-  height: 15vh;
   text-align: right;
   margin: 0;
   margin-right: 40px;
@@ -654,6 +654,11 @@ ul {
     width: auto;
     height: auto;
   }
+
+  .logo {
+    margin: 10vmin;
+    height: calc(7vmin);
+  }
 }
 @media all and (max-width: 723px) {
   .iphoneMock {
@@ -913,6 +918,7 @@ ul {
 }
 
 .modal-body {
+  padding: 6vh;
   background-color: #1B1B1B;
 }
 
