@@ -357,6 +357,8 @@ html {
   margin-top: 4vh;
   font-size: 2vw;
   border-radius: 20px;
+  width: auto;
+  height: auto;
 }
 
 .getStarted {
@@ -647,8 +649,10 @@ ul {
 
   #biggerBuy {
     margin-top: 4vh;
-    font-size: 5vw;
-    border-radius: 20px;
+    font-size: 6vw;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
   }
 }
 @media all and (max-width: 723px) {
@@ -964,7 +968,7 @@ ul {
 }
 
 .rawPage {
-  min-height: 75vh;
+  min-height: 50vh;
 }
 
 /*# sourceMappingURL=App.css.map */

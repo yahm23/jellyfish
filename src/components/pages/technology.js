@@ -6,10 +6,10 @@ import WiredDevice from '../structural/animatedFeatures/wiredDevice'
 export default function Technology() {
 
     return (
-        <div className="productPage">
+        <div className="rawPage">
 
             {/* <Phone></Phone> */}
-            <WiredDevice></WiredDevice>
+            {/* <WiredDevice></WiredDevice> */}
         </div>
     )
 }

@@ -236,7 +236,7 @@ const Landing = () => {
 
     }
     return (
-        <div>
+        <div className="rawPage">
             
             {isMobile? 
             <MobileLanding></MobileLanding> :
