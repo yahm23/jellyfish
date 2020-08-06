@@ -320,26 +320,29 @@ html {
 
 .box1{
     @include whiteRegularFont();
-    text-align: right;
+    // text-align: right;
 }
 .box2 {
     @include whiteRegularFont();
+    font-size: 2vw;
 }
 .device{
     display: flex;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: space-around;
     // width: 90%;
+    height: 70vh;
     margin-top: 10vh;
 }
 
 .jellyInUse{
     grid-area: 1 / 2 / 3 / 3;
     justify-self: center;
-    @include neomorphic()
+    transform: translateY( 25% );
+    // @include neomorphic()
     
 }
 .bounce {
@@ -801,4 +804,20 @@ min-height: auto
 
 .wiredAnimation{
     position: relative;
+    width: 40vw;
+}
+
+.deviceWired{
+    z-index: 2;
+    transform: translateY(69%);
+
+    width: 50%;
+    top: 50%;
+    @include absolutePosCentering();
+}
+
+#wires{
+    z-index: 1;
+    @include absolutePosCentering();
+
 }

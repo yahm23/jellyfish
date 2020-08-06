@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactVivus from 'react-vivus';
-import Wires from '../../media/animationMedia/wiredAttempt.svg'
+import Wires from '../../media/animationMedia/wiredAttempt2.svg'
+import deviceMock from '../../media/animationMedia/device.png'
+
+
 
 export default function WiredDevice() {
     return (
-        <div>
             <div className="wiredAnimation">
-                <img/>
+                <img className="deviceWired" src={deviceMock} />
                 <ReactVivus
-                        id="phoneDraw"
+                        id="wires"
                         option={{
                         file: Wires,
-                        duration: 450,
+                        duration: 350,
                         animTimingFunction: 'EASE',
                         type: 'delayed',
                         }}
@@ -19,6 +21,5 @@ export default function WiredDevice() {
                     />
             </div>
 
-        </div>
     )
 }

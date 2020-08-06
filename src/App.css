@@ -411,30 +411,29 @@ html {
 .box1 {
   font-family: "Quicksand", sans-serif;
   color: white;
-  text-align: right;
 }
 
 .box2 {
   font-family: "Quicksand", sans-serif;
   color: white;
+  font-size: 2vw;
 }
 
 .device {
   display: flex;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(3, 1fr);
   justify-content: space-around;
+  height: 70vh;
   margin-top: 10vh;
 }
 
 .jellyInUse {
   grid-area: 1/2/3/3;
   justify-self: center;
-  border-radius: 21px;
-  background: linear-gradient(145deg, #1d1d1d, #181818);
-  box-shadow: 11px 11px 22px #161616, -11px -11px 22px #202020;
+  transform: translateY(25%);
 }
 
 .bounce {
@@ -925,6 +924,30 @@ ul {
 
 .wiredAnimation {
   position: relative;
+  width: 40vw;
+}
+
+.deviceWired {
+  z-index: 2;
+  transform: translateY(69%);
+  width: 50%;
+  top: 50%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#wires {
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=App.css.map */

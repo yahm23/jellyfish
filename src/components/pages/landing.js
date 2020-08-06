@@ -6,12 +6,13 @@ import time from '../media/icons/time.png'
 import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
 import JellyDevice from '../media/jellyDevice.png'
-import jellyInUse from '../media/jellyInUse.png'
+import jellyInUse from '../media/animationMedia/device.png'
 import { useMediaQuery } from 'react-responsive'
 
 
 import AOS from 'aos'
 import ScrollPosition from '../structural/scrollPosition.js'
+import WiredDevice from '../structural/animatedFeatures/wiredDevice'
 
 
 const Landing = () => {
@@ -110,10 +111,12 @@ const Landing = () => {
             <div id="section3">
                 <h2 className="subheading">Our technology is unique.</h2>
                 <div className="device">
-                    <img className="jellyInUse" width="55%"src={jellyInUse}/>
-                    <h2 className = "box1"> The device is installed simply by clamping directly into your electric panel. </h2>
+                    <div className="jellyInUse">
+                        <WiredDevice></WiredDevice>
+                    </div>
+                    {/* <img className="jellyInUse" width="55%"src={jellyInUse}/> */}
+                    <h2 className = "box2"> The device is installed simply by clamping directly into your electric panel. </h2>
                     <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
-                    <h2 className = "box1"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     <h2 className = "box2"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                 </div>
                 {ArrowBounce('#section4')}
@@ -193,9 +196,13 @@ const Landing = () => {
                     
                     <div id="section2"> 
                         <h2 className="subheading">Our technology is unique.</h2>
+{/*                         
+                        <div className="jellyInUse2">
+                            <WiredDevice></WiredDevice>
+                        </div> */}
+                            {/* <WiredDevice></WiredDevice> */}
                         <img className="jellyInUse2"src={jellyInUse}/>
                         <h2 className = "feature mobileText"> The device is installed simply by clamping directly into your electric panel. </h2>
-                        <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     </div>

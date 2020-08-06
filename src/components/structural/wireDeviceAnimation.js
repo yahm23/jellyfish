@@ -64,4 +64,4 @@ const WireDeviceAnimation = (value,threshold) => {
 
 }
 
-export default WireDeviceAnimation
+// export default WireDeviceAnimation
