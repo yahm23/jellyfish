@@ -569,7 +569,6 @@ ul{
     }
     
     #phoneDraw{
-        
         margin: ($enlargementFactor * 1vw) auto;
     }
     
@@ -798,4 +797,8 @@ min-height: auto
 .mobileFeatureText{
     width: 70%;
     margin: 4vh auto;
+}
+
+.wiredAnimation{
+    position: relative;
 }

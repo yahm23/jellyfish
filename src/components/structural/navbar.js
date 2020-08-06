@@ -56,7 +56,7 @@ const NavbarTop = () => {
                             </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
 
-                            <NavbarBrand href="/contact">
+                            <NavbarBrand href="/support">
                                 <img height="25px" src= {Comment} style={{marginRight:10}} />
                                 Contact
                             </NavbarBrand>
