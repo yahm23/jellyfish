@@ -6,6 +6,7 @@ import Footer from './footer';
 import Product from '../pages/product';
 import Technology from '../pages/technology';
 import Support from '../pages/support';
+import PageNotFound from '../pages/404';
 import Buy from '../pages/buy';
 
 const MainContainer = () => {
@@ -18,7 +19,7 @@ const MainContainer = () => {
                 <Route path='/technology' component={Technology}></Route>
                 <Route path='/buy-jellyfish' component={Buy}></Route>
                 <Route path='/support' component={Support}></Route>
-                <Route path='/page-not-found' component={Support}></Route>
+                <Route component={PageNotFound}></Route>
             </Switch>
             <Footer></Footer>
         </div>
