@@ -44,12 +44,6 @@ const NavbarTop = () => {
                             </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
 
-                            <NavbarBrand href="/buy-jellyfish">
-                                <img height="25px" src= {Logo} style={{marginRight:10}} />
-                                Products
-                            </NavbarBrand>
-                            <Modal.Footer></Modal.Footer>
-
                             <NavbarBrand href="/products">
                                 <img height="25px" src= {Logo} style={{marginRight:10}} />
                                 Products
@@ -65,6 +59,12 @@ const NavbarTop = () => {
                             <NavbarBrand href="/support">
                                 <img height="25px" src= {Comment} style={{marginRight:10}} />
                                 Contact
+                            </NavbarBrand>
+                            <Modal.Footer></Modal.Footer>
+
+                            <NavbarBrand href="/buy-jellyfish">
+                                <img height="25px" src= {Logo} style={{marginRight:10}} />
+                                Buy Jellyfish
                             </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
 

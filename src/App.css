@@ -169,8 +169,8 @@ html {
 }
 
 .logo {
-  margin: 25px;
-  height: calc(20px + 5vmin);
+  margin: 5vmin;
+  height: calc(7vmin);
 }
 
 .deviceMobile {
@@ -185,8 +185,10 @@ html {
   font-weight: bold;
   font-size: 16px;
   border: none;
-  border-radius: 12px;
+  border-radius: 21px;
   padding: 10px;
+  height: 40px;
+  width: 160px;
 }
 
 .entireNavbar {
@@ -200,8 +202,9 @@ html {
   width: 75%;
   height: 15vh;
   text-align: right;
-  margin: auto;
+  margin: 0;
   margin-right: 40px;
+  padding: 0;
 }
 
 #button.navbar-brand {
@@ -215,7 +218,7 @@ html {
   font-family: "Quicksand", sans-serif;
   text-decoration: none;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navbar-expand-lg {
@@ -961,7 +964,7 @@ ul {
 }
 
 .rawPage {
-  min-height: 45vh;
+  min-height: 75vh;
 }
 
 /*# sourceMappingURL=App.css.map */

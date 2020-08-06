@@ -104,8 +104,8 @@ html {
     width: 100%;
 }
 .logo{
-    margin: 25px;
-    height:calc(20px + 5vmin)
+    margin: 5vmin;
+    height:calc(7vmin)
 }
 .deviceMobile{
     width: 50%;
@@ -117,8 +117,10 @@ html {
     font-weight: bold;
     font-size: 16px;
     border: none;
-    border-radius: 12px;
+    border-radius: 21px;
     padding: 10px;;
+    height: 40px;
+    width: 160px;
 }
 .entireNavbar{
     // border-bottom: $off-White 1px solid;
@@ -132,8 +134,9 @@ html {
     width: 75%;
     height: 15vh;
     text-align: right;
-    margin: auto;
+    margin: 0;
     margin-right: 40px;
+    padding: 0;
 }
 #button.navbar-brand {
     margin-top:none;
@@ -145,7 +148,7 @@ html {
     font-family: $fontRegular;
     text-decoration: none;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 18px;
 }
 .navbar-expand-lg {
     justify-content: flex-end;
@@ -832,5 +835,5 @@ min-height: auto
 }
 
 .rawPage{
-    min-height: 45vh;
+    min-height: 75vh;
 }
