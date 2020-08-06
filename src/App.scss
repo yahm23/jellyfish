@@ -61,6 +61,7 @@ html {
 
 .bannerBlurb{
     @include bannerBlurb();
+    align-self: center;
 }
 
 .bannerItems{
@@ -90,7 +91,11 @@ html {
 }
 
 .bannerText{
-    margin-top: 4vh;
+    display: grid;
+    height: 70vh;
+    width: 65vw;
+    grid-template-rows: 20% 60% 20%;
+    // margin-top: 4vh;
 }
 
 

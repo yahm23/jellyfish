@@ -44,6 +44,12 @@ const NavbarTop = () => {
                             </NavbarBrand>
                             <Modal.Footer></Modal.Footer>
 
+                            <NavbarBrand href="/buy-jellyfish">
+                                <img height="25px" src= {Logo} style={{marginRight:10}} />
+                                Products
+                            </NavbarBrand>
+                            <Modal.Footer></Modal.Footer>
+
                             <NavbarBrand href="/products">
                                 <img height="25px" src= {Logo} style={{marginRight:10}} />
                                 Products

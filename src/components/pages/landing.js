@@ -5,7 +5,7 @@ import leccy from '../media/icons/leccy.png'
 import time from '../media/icons/time.png'
 import tree from '../media/icons/tree.png'
 import money from '../media/icons/money.png'
-import JellyDevice from '../media/jellyDevice.png'
+import JellyDevice from '../media/animationMedia/device.png'
 import jellyInUse from '../media/animationMedia/device.png'
 import { useMediaQuery } from 'react-responsive'
 
@@ -38,17 +38,34 @@ const Landing = () => {
     const BannerContainer = () => {
         return(
             <div className= "bannerContainer">
-                <div className="bannerItems">
+                
+                <div className="">
+                    <div className = "bannerText">
+                        <div>
+                            <h1 className="bannerTitle" >Take </h1>
+                            <h1 className="clipping bannerTitle" >control </h1>
+                            <h1 className="bannerTitle" >of your energy use</h1>
+                        </div>
+                    <div>
+                        <img  src={JellyDevice} width= "50%" height="auto"/> 
+                    </div>
+                        <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
+                    </div>
+                </div>
+                {/* <div className="bannerItems">
                     <div className = "bannerText">
                         <h1 className="bannerTitle" >Take </h1>
                         <h1 className="clipping bannerTitle" >control </h1>
                         <h1 className="bannerTitle" >of your energy use</h1>
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
                     </div>
-                    <div style={{alignSelf:'center'}}>
-                        <img  src={JellyDevice} width= "90%" height="auto"/> 
+                    <div style={{alignSelf:'center',width:"60%"}}>
+                        <img  src={JellyDevice} width= "100%" height="auto"/> 
                     </div>
-                </div>
+                </div> */}
+
+
+
                     {ArrowBounce('#section1')}
             </div>
         )
