@@ -13,6 +13,8 @@ import { useMediaQuery } from 'react-responsive'
 import AOS from 'aos'
 import ScrollPosition from '../structural/scrollPosition.js'
 import WiredDevice from '../structural/animatedFeatures/wiredDevice'
+import { Link } from 'react-router-dom'
+import  Button  from 'react-bootstrap/Button'
 
 
 const Landing = () => {
@@ -147,8 +149,10 @@ const Landing = () => {
                 <div className = "getStarted" >
                     <h1 className="subheadingStarted"> Get Started with Jellyfish.</h1>
                     <h1 className="box2"> Sign up to get started today. </h1>
-                    <button id="biggerBuy" className="navbarButton">Buy Jellyfish</button>
 
+                        <Link to='/buy-jellyfish'>
+                            <Button id="biggerBuy" className="navbarButton">Buy Jellyfish</Button>
+                        </Link>
                 </div>
                 {/* <h1> Get Started with Jellyfish</h1> */}
             </div>
@@ -186,7 +190,9 @@ const Landing = () => {
                         <h1 className="clipping bannerTitle" >control </h1>
                         <h1 className="bannerTitle" >of your energy use</h1>
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
-                        <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+                        <Link to='/buy-jellyfish'>
+                            <Button id="biggerBuy" className="navbarButton">Buy Jellyfish</Button>
+                        </Link>
                     </div>
                     <div>
                         <img className="iphoneScreen"  src={IphoneScreen}></img>
@@ -224,7 +230,9 @@ const Landing = () => {
                         <h2 className = "feature mobileText"> Jellyfish is capable of montioring your electric usage by taking accurate readings at a rate of 1,000,000/s.</h2>
                     </div>
                     <div className="bannerTextMobile">
-                        <button id="biggerBuy"  className="navbarButton">Buy Jellyfish</button>
+                        <Link to='/buy-jellyfish'>
+                            <Button id="biggerBuy" className="navbarButton">Buy Jellyfish</Button>
+                        </Link>
                     </div>
 
                     {/* Scroll vlaue to trigger animation should be passed in  */}

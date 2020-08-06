@@ -169,8 +169,8 @@ html {
 }
 
 .logo {
-  margin: 9vmin;
-  height: calc(10vmin);
+  margin: 4vh;
+  height: 8vh;
 }
 
 .deviceMobile {
@@ -656,8 +656,8 @@ ul {
   }
 
   .logo {
-    margin: 10vmin;
-    height: calc(7vmin);
+    margin: 6vh;
+    height: calc(5vh);
   }
 }
 @media all and (max-width: 723px) {
@@ -974,7 +974,7 @@ ul {
 }
 
 .rawPage {
-  min-height: 50vh;
+  min-height: 58vh;
 }
 
 /*# sourceMappingURL=App.css.map */
