@@ -198,6 +198,7 @@ html {
 
 .navbar {
   width: 75%;
+  height: 15vh;
   text-align: right;
   margin: auto;
   margin-right: 40px;
@@ -706,6 +707,11 @@ ul {
     row-gap: 15vh;
     align-items: center;
   }
+
+  .bannerTextMobile {
+    text-align: center;
+    margin: 5vh 10%;
+  }
 }
 @media all and (min-width: 723px) {
   .iphoneMock {
@@ -952,6 +958,10 @@ ul {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.rawPage {
+  min-height: 45vh;
 }
 
 /*# sourceMappingURL=App.css.map */

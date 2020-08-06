@@ -46,7 +46,7 @@ const Landing = () => {
                             <h1 className="clipping bannerTitle" >control </h1>
                             <h1 className="bannerTitle" >of your energy use</h1>
                         </div>
-                    <div>
+                    <div style = {{placeSelf:'center'}} >
                         <img  src={JellyDevice} width= "50%" height="auto"/> 
                     </div>
                         <h2 className="bannerBlurb">Installed in your electric box, Jellyfish can save you money by accurately monitioring your energy use</h2>
@@ -181,7 +181,7 @@ const Landing = () => {
             <div>
                 <div>
                     <img className="deviceMobile" src={JellyDevice}/> 
-                    <div className="bannerText">
+                    <div className="bannerTextMobile">
                         <h1 className="bannerTitle" >Take </h1>
                         <h1 className="clipping bannerTitle" >control </h1>
                         <h1 className="bannerTitle" >of your energy use</h1>

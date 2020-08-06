@@ -130,6 +130,7 @@ html {
 
 .navbar{
     width: 75%;
+    height: 15vh;
     text-align: right;
     margin: auto;
     margin-right: 40px;
@@ -590,6 +591,10 @@ ul{
         row-gap: 15vh;
         align-items: center;
     }
+    .bannerTextMobile{
+        text-align: center;
+        margin: 5vh 10%;
+    }
 }
 @media all and (min-width: 723px) {
     // NOT-mobile
@@ -824,5 +829,8 @@ min-height: auto
 #wires{
     z-index: 1;
     @include absolutePosCentering();
+}
 
+.rawPage{
+    min-height: 45vh;
 }
