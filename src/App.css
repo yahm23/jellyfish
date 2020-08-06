@@ -712,7 +712,7 @@ ul {
   .featuresGrid {
     padding-top: 10vw;
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 90%;
     justify-content: center;
     text-align: center;
     column-gap: 0px;
@@ -941,7 +941,7 @@ ul {
 }
 
 .mobileFeatureText {
-  width: 70%;
+  width: 90%;
   margin: 4vh auto;
 }
 
