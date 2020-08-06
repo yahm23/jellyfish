@@ -13,9 +13,10 @@ export default function WiredDevice() {
                         id="wires"
                         option={{
                         file: Wires,
-                        duration: 350,
-                        animTimingFunction: 'EASE',
-                        type: 'delayed',
+                        duration: 250,
+                        animTimingFunction: 'EASE_OUT',
+                        type: 'sync',
+                        // reverseStack:true
                         }}
                         style={{ width: '95%' }}
                     />
