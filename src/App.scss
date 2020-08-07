@@ -778,6 +778,8 @@ min-height: auto
     @include cogAnimation();
     animation: rotateReverse 4s infinite 0.8s linear;
 }
+
+
 .cls-1cog{fill:$hotPink; stroke-width:3;}
 .cls-2cog{fill:none;stroke:$hotPink;stroke-linecap:round;stroke-miterlimit:8.03;stroke-width:2;}
 
@@ -786,7 +788,7 @@ min-height: auto
 
 .horizontal {
     stroke-width: 0.1;
-    stroke: #4a667a;
+    stroke: white;
 }
 
 .animatedFeature{
