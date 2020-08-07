@@ -861,7 +861,7 @@ min-height: auto
 
 .buyingGrid{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 40%;
     grid-template-rows: 1fr;
     grid-column-gap: 3vw;
     width: 85%;
@@ -871,7 +871,32 @@ min-height: auto
 .buyDescription{
     text-align: left;
     @include whiteRegularFont();
+    font-weight: 400;
+    font-size: 1.5vw;
 }
 h5.buyDescription{
     font-weight: 100;
+}
+
+.cartButton{
+    background-color:  transparent;
+    border: 4px solid #E7286C;
+    background-color: #1B1B1B;
+    width: 15vw !important;
+}
+
+.buyPagesButtons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buyButton{
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #E7286C;
+    
+    border-color: transparent; /*set the color you want here*/
 }
