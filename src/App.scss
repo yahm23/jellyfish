@@ -1,7 +1,7 @@
 @import "./scssFiles/hamburgers.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700:500&display=swap');
 
 @font-face {
     font-family: 'GilroyHeavy';
@@ -18,7 +18,10 @@
 
 $fontHeavy: 'GilroyHeavy', Arial, sans-serif;
 $fontLight: 'GilroyLight', Arial, sans-serif;
-$fontRegular: 'Quicksand', sans-serif;
+@mixin fontRegular{
+    font-family:'Quicksand', sans-serif;
+    font-weight: 700;
+}
 $fontTech: 'Chakra Petch', sans-serif;
 
 $hotPink: #E7286C;
@@ -27,7 +30,8 @@ $off-White:#cccccc;
 
 
 @mixin whiteRegularFont{
-    font-family: $fontRegular;
+    @include fontRegular();
+    // font-family: $fontRegular;
     color: white;
 }
 @mixin neomorphic {
@@ -148,7 +152,8 @@ html {
 .navbar-brand{
     color: $off-White !important;
     margin-right: 10%;
-    font-family: $fontRegular;
+    @include fontRegular();
+    // font-family: $fontRegular;
     text-decoration: none;
     font-weight: 900;
     font-size: 18px;
@@ -466,12 +471,13 @@ ul{
         // justify-self: right;
         width: 100%;
         padding-top: 25px;
+        margin-bottom: 8vh;
         // grid-area: 1 / 1 / 4 / 2; 
     }
     .feature{
         font-size: 130%;
         text-align: center;
-        margin: 0 3vh;
+        margin: 3vh;
     }
     .mobileText{
         font-size: 120%;
@@ -849,4 +855,23 @@ min-height: auto
 
 .rawPage{
     min-height: 58vh;
+    max-width: 100vw;
+    margin: 5vw auto;
+}
+
+.buyingGrid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 3vw;
+    width: 85%;
+    margin: 5vh auto;
+}
+
+.buyDescription{
+    text-align: left;
+    @include whiteRegularFont();
+}
+h5.buyDescription{
+    font-weight: 100;
 }
