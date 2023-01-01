@@ -16,7 +16,7 @@
     "react-dom": "^16.13.1",
     "react-responsive": "^8.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-split-flap-display": "^0.3.2",
     "react-vivus": "0.0.2",
     "styled-components": "^5.1.1",
